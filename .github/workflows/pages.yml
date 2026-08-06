@@ -1,0 +1,100 @@
+name: Deploy Sport Kak Iskusstvo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build autonomous static copy
+        shell: bash
+        run: |
+          set -euo pipefail
+          origin="https://sport-kak-iskusstvo-ivan-egorov.bushmanov-ilya.chatgpt.site"
+          mkdir -p dist/assets dist/images dist/fonts
+          mkdir -p dist/assets/_vinext_fonts/geist-8ac0455e797f
+          mkdir -p dist/assets/_vinext_fonts/geist-mono-00e989178794
+
+          files=(
+            "index.html"
+            "stork-symbol-full.jpg"
+            "images/aikido-outdoor.jpg"
+            "images/ivan-new.png"
+            "images/nikolay-new.png"
+            "images/ilya-new.png"
+            "images/denis-kruglov.png"
+            "events-stage.jpg"
+            "events-production.png"
+            "hero-aikido-clean.png"
+            "og.png"
+            "favicon.svg"
+            "assets/index-C1qDmq2B.css"
+            "assets/layout-segment-context-CqrGLgxT.js"
+            "assets/rolldown-runtime-S-ySWqyJ.js"
+            "assets/index-BDxKwxAQ.js"
+            "assets/framework-DjPHiq1u.js"
+            "assets/MentorProfiles-D6eTuQfD.js"
+            "assets/_vinext_fonts/geist-8ac0455e797f/geist-ff2310f5.woff2"
+            "assets/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2"
+            "assets/_vinext_fonts/geist-8ac0455e797f/geist-52306abf.woff2"
+            "assets/_vinext_fonts/geist-8ac0455e797f/geist-001175b1.woff2"
+            "assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2"
+            "assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-f6b33328.woff2"
+            "assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2"
+            "assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-0638449e.woff2"
+            "assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-971fb274.woff2"
+            "assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44745446.woff2"
+            "assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2"
+            "fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf"
+            "fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf"
+            "fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf"
+            "fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf"
+            "fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf"
+            "fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf"
+            "fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf"
+            "fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf"
+            "fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf"
+          )
+
+          for file in "${files[@]}"; do
+            mkdir -p "dist/$(dirname "$file")"
+            source_path="$file"
+            if [ "$file" = "index.html" ]; then source_path=""; fi
+            curl --fail --location --retry 4 --retry-all-errors "$origin/$source_path" -o "dist/$file"
+          done
+
+          sed -i 's#="/#="./#g; s#import("/assets/#import("./assets/#g; s#url(/assets/#url(./assets/#g' dist/index.html
+          sed -i 's#url(/fonts/#url(../fonts/#g; s#url(/hero-aikido-clean.png)#url(../hero-aikido-clean.png)#g' dist/assets/index-C1qDmq2B.css
+          perl -0pi -e 's{<script>\(function\(\)\{function c\(\).*?</script>}{}s' dist/index.html
+          touch dist/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
