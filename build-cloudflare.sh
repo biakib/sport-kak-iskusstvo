@@ -58,4 +58,6 @@ done
 sed -i 's#="/#="./#g; s#import("/assets/#import("./assets/#g; s#url(/assets/#url(./assets/#g' dist/index.html
 sed -i 's#url(/fonts/#url(../fonts/#g; s#url(/hero-aikido-clean.png)#url(../hero-aikido-clean.png)#g' dist/assets/index-C1qDmq2B.css
 perl -0pi -e 's{<script>\(function\(\)\{function c\(\).*?</script>}{}s' dist/index.html
+cp arrow-overrides.css dist/arrow-overrides.css
+sed -i 's#</head>#<link rel="stylesheet" href="./arrow-overrides.css"></head>#' dist/index.html
 touch dist/.nojekyll
