@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sport kak iskusstvo//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:start-project-horoshkola-20260901@sport-kak-iskusstvo.ru
+DTSTAMP:20260807T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:Старт проекта в Хорошколе
+LOCATION:Хорошкола
+DESCRIPTION:Новый этап сообщества и практики проекта «Спорт как искусство».
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

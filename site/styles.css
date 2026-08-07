@@ -472,6 +472,11 @@ footer a{align-items:center;display:inline-flex}
 .roadmap-content p{color:var(--pink);text-transform:uppercase;letter-spacing:1.2px;margin:0 0 7px;font-size:10px;font-weight:800}
 .roadmap-content h3{letter-spacing:-.045em;margin:0 0 7px;font-size:clamp(24px,3vw,37px);line-height:1}
 .roadmap-content span{color:var(--muted);font-size:15px}
+.calendar-actions{flex-wrap:wrap;gap:9px;margin-top:18px;display:flex}
+.calendar-button{color:#101410;background:var(--lime);border:1px solid var(--lime);border-radius:999px;padding:9px 13px;font-size:12px;font-weight:800;line-height:1.2;text-decoration:none;transition:transform .2s,background .2s,color .2s}
+.calendar-button:hover{background:var(--paper);border-color:var(--paper);transform:translateY(-2px)}
+.calendar-button-google{color:var(--paper);background:transparent;border-color:#ffffff66}
+.calendar-button-google:hover{color:#101410}
 .roadmap-status{color:#101410;background:var(--lime);border-radius:999px;padding:8px 12px;font-size:11px;font-weight:800}
 .roadmap-status-next{color:var(--paper);background:#ffffff1a;border:1px solid #ffffff40}
 @media (width<=760px){
@@ -489,6 +494,8 @@ footer a{align-items:center;display:inline-flex}
 .roadmap-marker:after{height:98px}
 .roadmap-content h3{font-size:27px}
 .roadmap-content span{font-size:13px}
+.calendar-actions{gap:7px;margin-top:14px}
+.calendar-button{padding:8px 10px;font-size:11px}
 }
 
 /* Version 1.1: small, dependency-free motion system. */
