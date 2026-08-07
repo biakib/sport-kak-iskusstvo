@@ -188,6 +188,34 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeCalendarMenus();
 });
 
+const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const mobileNav = document.querySelector(".mobile-nav");
+
+function closeMobileMenu() {
+  if (!mobileMenuToggle || !mobileNav) return;
+  mobileMenuToggle.setAttribute("aria-expanded", "false");
+  mobileMenuToggle.setAttribute("aria-label", "Открыть меню");
+  mobileNav.hidden = true;
+  document.body.classList.remove("mobile-menu-open");
+}
+
+mobileMenuToggle?.addEventListener("click", () => {
+  const willOpen = mobileMenuToggle.getAttribute("aria-expanded") !== "true";
+  if (!willOpen) return closeMobileMenu();
+  mobileMenuToggle.setAttribute("aria-expanded", "true");
+  mobileMenuToggle.setAttribute("aria-label", "Закрыть меню");
+  mobileNav.hidden = false;
+  document.body.classList.add("mobile-menu-open");
+});
+
+mobileNav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMobileMenu));
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 760) closeMobileMenu();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMobileMenu();
+});
+
 const revealTargets = [...document.querySelectorAll("main > section")].slice(1);
 revealTargets.forEach((section) => section.classList.add("reveal"));
 
