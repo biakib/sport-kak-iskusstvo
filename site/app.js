@@ -1,9 +1,10 @@
-if ("scrollRestoration" in history) {
-  history.scrollRestoration = "manual";
-}
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
 
 function resetInitialScroll() {
-  if (!window.location.hash) window.scrollTo(0, 0);
+  if (window.location.hash) {
+    history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+  }
+  window.scrollTo(0, 0);
 }
 
 resetInitialScroll();
