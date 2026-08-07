@@ -84,8 +84,8 @@ em{color:var(--lime);font-style:normal}
 .nav{z-index:4;border-bottom:1px solid #ffffff2b;justify-content:space-between;align-items:center;height:82px;display:flex;position:relative}
 .brand{color:var(--paper);align-items:center;gap:8px;font-size:10px;font-weight:900;line-height:.92;text-decoration:none;display:flex}
 .brand img{object-fit:contain;border-radius:7px;width:40px;height:40px}
-.nav-links{gap:25px;display:flex}
-.nav a{color:var(--paper);font-size:13px;font-weight:700;text-decoration:none}
+.nav-links{gap:28px;display:flex}
+.nav a{color:var(--paper);font-size:15px;font-weight:750;text-decoration:none}
 .nav-cta{background:var(--lime);border-radius:999px;color:#101410!important;padding:11px 16px!important}
 .nav-cta span{color:var(--pink);margin-left:4px}
 .mobile-menu-toggle,.mobile-nav{display:none}
