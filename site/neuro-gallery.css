@@ -1,0 +1,15 @@
+.session-visual{background:#111713;padding:0 0 110px}
+.session-visual-grid{align-items:center;display:grid;gap:82px;grid-template-columns:.82fr 1.18fr}
+.session-visual figure{height:500px;margin:0;overflow:hidden;position:relative}
+.session-visual figure:after{border:1px solid rgb(231 61 118 / 65%);content:"";inset:15px -15px -15px 15px;position:absolute}
+.session-visual img{filter:contrast(1.04) saturate(.88);height:100%;object-fit:cover;width:100%}
+.session-visual-copy p:not(.kicker){color:var(--muted);font-size:18px;line-height:1.48;margin:0;max-width:540px}
+.session-visual-copy strong{color:var(--lime);display:block;font-size:20px;line-height:1.3;margin-top:28px}
+
+@media (max-width:760px){
+  .session-visual{padding-bottom:75px}
+  .session-visual-grid{gap:36px;grid-template-columns:1fr}
+  .session-visual figure{height:440px}
+  .session-visual-copy p:not(.kicker){font-size:16px}
+  .session-visual-copy strong{font-size:18px}
+}
