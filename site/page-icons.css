@@ -1,0 +1,4 @@
+/* Reusable hand-drawn arrows for standalone direction pages. */
+.page-arrow{color:var(--pink);vertical-align:-2px;flex:none;width:16px;height:16px;margin-left:7px;font-size:0!important;transition:transform .2s;display:inline-block;position:relative}.page-arrow:before{content:"";transform-origin:center;background:currentColor;border-radius:2px;width:13px;height:2px;position:absolute;top:7px;left:1px;transform:rotate(-45deg)}.page-arrow:after{content:"";border-top:2px solid currentColor;border-right:2px solid currentColor;border-radius:1px;width:7px;height:7px;position:absolute;top:1px;right:1px}.page-arrow-down{transform:rotate(135deg)}a:hover .page-arrow{transform:translate(2px,-2px)}a:hover .page-arrow-down{transform:rotate(135deg)translate(2px,-2px)}
+
+@media(max-width:760px){.back-link .page-arrow{width:19px;height:19px;margin:0}.gym-hero-copy h1{font-size:clamp(36px,10vw,47px)}}
