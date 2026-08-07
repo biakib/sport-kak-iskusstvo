@@ -59,9 +59,9 @@ sed -i 's#="/#="./#g; s#import("/assets/#import("./assets/#g; s#url(/assets/#url
 sed -i 's#url(/fonts/#url(../fonts/#g; s#url(/hero-aikido-clean.png)#url(../hero-aikido-clean.png)#g' dist/assets/index-C1qDmq2B.css
 perl -0pi -e 's{<script>\(function\(\)\{function c\(\).*?</script>}{}s' dist/index.html
 # Prioritize the actual brand fonts and avoid a visible fallback-font swap.
-perl -0pi -e 's{<link rel="preload" href="\\./assets/_vinext_fonts/[^>]+>\\s*}{}g' dist/index.html
+perl -0pi -e 's{<link rel="preload" href="\./assets/_vinext_fonts/[^>]+>\s*}{}g' dist/index.html
 perl -0pi -e 's{</head>}{<link rel="preload" href="./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf" as="font" type="font/ttf" crossorigin></head>}g' dist/index.html
-perl -0pi -e 's#@font-face\\{font-family:(Manrope|Unbounded);#@font-face{font-family:$1;font-display:block;#g' dist/assets/index-C1qDmq2B.css
+perl -0pi -e 's#@font-face\{font-family:(Manrope|Unbounded);#@font-face{font-family:$1;font-display:block;#g' dist/assets/index-C1qDmq2B.css
 cp arrow-overrides.css dist/arrow-overrides.css
 sed -i 's#</head>#<link rel="stylesheet" href="./arrow-overrides.css"></head>#' dist/index.html
 touch dist/.nojekyll
