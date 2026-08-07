@@ -110,36 +110,6 @@ document.querySelectorAll(".mentor").forEach((button, index) => {
   button.addEventListener("click", () => openBiography(mentors[index]));
 });
 
-const storkVideo = document.querySelector(".stork-video");
-const storkMedia = document.querySelector(".stork-media");
-const storkPlay = document.querySelector(".stork-play");
-
-if (storkVideo && storkMedia && storkPlay) {
-  const setStorkLabel = (label, pressed) => {
-    storkPlay.querySelector(".stork-play-label").textContent = label;
-    storkPlay.setAttribute("aria-pressed", String(pressed));
-  };
-
-  storkPlay.addEventListener("click", async () => {
-    storkVideo.currentTime = 0;
-    try {
-      await storkVideo.play();
-    } catch {
-      setStorkLabel("Нажмите, чтобы раскрыть", false);
-    }
-  });
-
-  storkVideo.addEventListener("play", () => {
-    storkMedia.classList.add("is-playing");
-    setStorkLabel("Символ в движении", true);
-  });
-
-  storkVideo.addEventListener("ended", () => {
-    storkMedia.classList.remove("is-playing");
-    setStorkLabel("Повторить символ", false);
-  });
-}
-
 const motionPrinciples = {
   attention: {
     index: "01 / 03",

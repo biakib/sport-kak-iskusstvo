@@ -14,7 +14,7 @@
 <link rel="preload" as="image" href="./images/denis-kruglov.png"/>
 <link rel="preload" href="./events-stage.jpg" as="image"/>
 <link rel="preload" href="./events-production.png" as="image"/>
-<link rel="stylesheet" href="./styles.css?v=1.6.0" data-rsc-css-href="./styles.css?v=1.6.0" data-precedence="vite-rsc/importer-resources"/>
+<link rel="stylesheet" href="./styles.css?v=1.6.1" data-rsc-css-href="./styles.css?v=1.6.1" data-precedence="vite-rsc/importer-resources"/>
 <title>Спорт как искусство — проект Ивана Егорова</title>
 <meta name="description" content="Движение, сила и созидание: айкидо, оздоровительная гимнастика, события и медиа."/>
 <meta property="og:title" content="Спорт как искусство"/>
@@ -119,16 +119,15 @@
 </section>
 <section class="stork-story">
 <div class="shell stork-grid">
+<div class="stork-visuals" aria-label="Символ проекта в статике и движении">
+<div class="stork-symbol-photo">
+<img src="./stork-symbol-full.jpg" alt="Многослойный аист — символ проекта"/>
+</div>
 <div class="stork-media">
-<video class="stork-video" preload="metadata" muted playsinline poster="./media/stork-reveal-poster.jpg">
+<video class="stork-video" autoplay muted loop playsinline preload="metadata" poster="./media/stork-reveal-poster.jpg" aria-label="Анимация символа аиста">
 <source src="./media/stork-reveal.mp4" type="video/mp4"/>
 </video>
-<div class="stork-media-shade" aria-hidden="true"></div>
-<button class="stork-play" type="button" aria-label="Запустить анимацию символа аиста" aria-pressed="false">
-<span class="stork-play-icon" aria-hidden="true"></span>
-<span class="stork-play-label">Раскрыть символ</span>
-</button>
-<p class="stork-media-note">03 сек · символ в движении</p>
+</div>
 </div>
 <div>
 <p class="eyebrow yellow">Наш символ</p>
@@ -375,7 +374,7 @@
 </a>
 </footer>
 </main>
-<script defer src="./app.js?v=1.6.0">
+<script defer src="./app.js?v=1.6.1">
 </script>
 </body>
 </html>
