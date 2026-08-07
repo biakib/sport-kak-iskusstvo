@@ -97,3 +97,37 @@ document.querySelectorAll(".mentor").forEach((button, index) => {
   button.type = "button";
   button.addEventListener("click", () => openBiography(mentors[index]));
 });
+
+const progress = document.createElement("div");
+progress.className = "page-progress";
+progress.setAttribute("aria-hidden", "true");
+document.body.append(progress);
+
+function updateProgress() {
+  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progressValue = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+  progress.style.transform = `scaleX(${Math.min(1, Math.max(0, progressValue))})`;
+}
+
+updateProgress();
+window.addEventListener("scroll", updateProgress, { passive: true });
+window.addEventListener("resize", updateProgress);
+
+const revealTargets = [...document.querySelectorAll("main > section")].slice(1);
+revealTargets.forEach((section) => section.classList.add("reveal"));
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12 },
+  );
+  revealTargets.forEach((section) => observer.observe(section));
+} else {
+  revealTargets.forEach((section) => section.classList.add("is-visible"));
+}
