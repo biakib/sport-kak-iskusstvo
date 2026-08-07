@@ -60,15 +60,15 @@ button,input:where([type=button],[type=reset],[type=submit]){appearance:button}
 .table{display:table}
 .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 }
-@font-face{font-family:Manrope;src:url(../fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
-@font-face{font-family:Manrope;font-weight:500;src:url(../fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf)}
-@font-face{font-family:Manrope;font-weight:600;src:url(../fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf)}
-@font-face{font-family:Manrope;font-weight:700;src:url(../fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
-@font-face{font-family:Manrope;font-weight:800;src:url(../fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
-@font-face{font-family:Unbounded;src:url(../fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:500;src:url(../fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:600;src:url(../fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
-@font-face{font-family:Unbounded;font-weight:700;src:url(../fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
+@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:500;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:600;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:700;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:800;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
+@font-face{font-family:Unbounded;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:500;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:600;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
+@font-face{font-family:Unbounded;font-weight:700;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
 :root{--bg:#101410;--black:#0b0e0c;--paper:#e9e6dc;--lime:#b8d63a;--pink:#b83d63;--muted:#b8bdb3;--line:#394039}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -334,7 +334,7 @@ footer a{color:var(--paper);text-decoration:none}
 .contact-links a{font-size:23px}
 }
 .site-header{background:linear-gradient(#040605f0,#04060594);border:0}
-.hero{background:#0a0c0b url(../hero-aikido-clean.png) 62%/cover no-repeat;min-height:100svh;padding-top:82px}
+.hero{background:#0a0c0b url(./hero-aikido-clean.png) 62%/cover no-repeat;min-height:100svh;padding-top:82px}
 .hero:after{background:linear-gradient(90deg,#050706e6 0%,#050706b8 31%,#05070621 65%,#05070657 100%)}
 .hero-copy .eyebrow{color:var(--paper);margin-bottom:16px}
 .hero-kicker{color:var(--lime);text-transform:uppercase;letter-spacing:1.5px;margin:0 0 17px;font-size:11px;font-weight:800}
@@ -405,9 +405,9 @@ h1,h2,h3{font-family:Unbounded,Manrope,Arial,sans-serif}
 .hero-copy{padding-top:clamp(118px,19vh,200px)}
 @media (width<=760px){.hero-copy{padding-top:clamp(135px,21vh,175px)}
 }
-.arrow-icon{vertical-align:-2px;flex:none;width:15px;height:15px;margin-left:7px;transition:transform .2s;display:inline-block;position:relative}
-.arrow-icon:before{content:"";transform-origin:50%;background:currentColor;border-radius:2px;width:11px;height:1.7px;position:absolute;bottom:3px;left:2px;transform:rotate(-45deg)}
-.arrow-icon:after{content:"";border-top:1.7px solid;border-right:1.7px solid;border-radius:1px;width:6px;height:6px;position:absolute;top:1px;right:1px}
+.arrow-icon{vertical-align:-2px;flex:none;width:16px;height:16px;margin-left:7px;transition:transform .2s;display:inline-block;position:relative}
+.arrow-icon:before{content:"";transform-origin:center;background:currentColor;border-radius:2px;width:13px;height:2px;position:absolute;top:7px;left:1px;transform:rotate(-45deg)}
+.arrow-icon:after{content:"";border-top:2px solid currentColor;border-right:2px solid currentColor;border-radius:1px;width:7px;height:7px;position:absolute;top:1px;right:1px}
 a:hover .arrow-icon,.mentor:hover .arrow-icon{transform:translate(2px,-2px)}
 .arrow-down{margin-left:9px;transform:rotate(135deg)}
 .button:hover .arrow-down{transform:rotate(135deg)translate(2px,-2px)}
