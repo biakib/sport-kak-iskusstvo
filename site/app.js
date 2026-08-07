@@ -159,6 +159,35 @@ updateProgress();
 window.addEventListener("scroll", updateProgress, { passive: true });
 window.addEventListener("resize", updateProgress);
 
+function closeCalendarMenus(except) {
+  document.querySelectorAll(".calendar-menu").forEach((menu) => {
+    if (menu === except) return;
+    const trigger = menu.querySelector(".calendar-trigger");
+    const options = menu.querySelector(".calendar-options");
+    trigger?.setAttribute("aria-expanded", "false");
+    if (options) options.hidden = true;
+  });
+}
+
+document.querySelectorAll(".calendar-menu").forEach((menu) => {
+  const trigger = menu.querySelector(".calendar-trigger");
+  const options = menu.querySelector(".calendar-options");
+  trigger?.addEventListener("click", () => {
+    const willOpen = trigger.getAttribute("aria-expanded") !== "true";
+    closeCalendarMenus(menu);
+    trigger.setAttribute("aria-expanded", String(willOpen));
+    if (options) options.hidden = !willOpen;
+  });
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".calendar-menu")) closeCalendarMenus();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeCalendarMenus();
+});
+
 const revealTargets = [...document.querySelectorAll("main > section")].slice(1);
 revealTargets.forEach((section) => section.classList.add("reveal"));
 
