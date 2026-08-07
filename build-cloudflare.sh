@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Archive-only importer for the legacy Cloudflare build. GitHub Pages deploys
+# the tracked files from site/ directly; do not use this script in deployment.
 set -euo pipefail
 
 origin="https://sport-kak-iskusstvo-ivan-egorov.bushmanov-ilya.chatgpt.site"
