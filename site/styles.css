@@ -60,15 +60,15 @@ button,input:where([type=button],[type=reset],[type=submit]){appearance:button}
 .table{display:table}
 .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 }
-@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
-@font-face{font-family:Manrope;font-weight:500;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf)}
-@font-face{font-family:Manrope;font-weight:600;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf)}
-@font-face{font-family:Manrope;font-weight:700;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
-@font-face{font-family:Manrope;font-weight:800;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
-@font-face{font-family:Unbounded;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:500;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:600;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
-@font-face{font-family:Unbounded;font-weight:700;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
+@font-face{font-family:Manrope;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:500;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:600;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:700;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:800;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
+@font-face{font-family:Unbounded;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:500;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:600;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
+@font-face{font-family:Unbounded;font-weight:700;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
 :root{--bg:#101410;--black:#0b0e0c;--paper:#e9e6dc;--lime:#b8d63a;--pink:#b83d63;--muted:#b8bdb3;--line:#394039}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -432,6 +432,13 @@ footer a{align-items:center;display:inline-flex}
 .bio-close{top:max(14px,calc(env(safe-area-inset-top) + 8px));right:max(14px,calc(env(safe-area-inset-right) + 8px));width:46px;height:46px}
 .bio-content h2{padding-right:42px}
 .nav-cta .arrow-icon{width:13px;height:13px;margin-left:4px}
+}
+
+/* Desktop biographies share a deliberately compact, predictable frame. */
+@media (width > 760px){
+.bio-modal{width:min(840px,100%);height:min(570px,calc(100dvh - 36px));max-height:calc(100dvh - 36px);overflow:hidden}
+.bio-modal>img{height:100%;min-height:0}
+.bio-content{min-height:0;padding:38px 40px;overflow-y:auto}
 }
 
 /* Version 1.1: small, dependency-free motion system. */
