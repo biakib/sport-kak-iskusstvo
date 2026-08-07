@@ -1,0 +1,5 @@
+/* Единый заметный логотип на всех страницах направлений. */
+@media (max-width:760px){
+  .page-nav .brand{font-size:11px;gap:10px;line-height:.92}
+  .page-nav .brand img{height:44px;width:44px}
+}
