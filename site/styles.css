@@ -617,3 +617,24 @@ footer a{align-items:center;display:inline-flex}
     top:14px;
   }
 }
+
+/* A calmer vertical rhythm for direction cards on compact screens. */
+@media (width <= 760px) {
+  .format-card {
+    min-height:270px;
+    padding:24px;
+  }
+
+  .format-card h3 {
+    line-height:.98;
+    margin-bottom:18px;
+  }
+
+  .format-card > span {
+    line-height:1.42;
+  }
+
+  .format-card a {
+    margin-top:24px;
+  }
+}
