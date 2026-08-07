@@ -82,8 +82,8 @@ function openBiography(mentor) {
   dialog.setAttribute("aria-modal", "true");
   dialog.setAttribute("aria-label", `Биография: ${mentor.name}`);
   dialog.innerHTML = `
-    <button class="bio-close" type="button" aria-label="Закрыть биографию"><span aria-hidden="true"></span></button>
     <article class="bio-modal">
+      <button class="bio-close" type="button" aria-label="Закрыть биографию"><span aria-hidden="true"></span></button>
       <img src="${mentor.image}" alt="${mentor.name}">
       <div class="bio-content">
         <p class="eyebrow">Наставник проекта</p>
