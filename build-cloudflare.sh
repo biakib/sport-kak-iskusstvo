@@ -19,7 +19,7 @@ files=(
   "images/denis-kruglov.png"
   "events-stage.jpg"
   "events-production.png"
-  "hero-aikido-clean.png"
+  "hero-aikido.jpg"
   "og.png"
   "favicon.svg"
   "assets/index-C1qDmq2B.css"
@@ -58,7 +58,7 @@ for file in "${files[@]}"; do
 done
 
 sed -i 's#="/#="./#g; s#import("/assets/#import("./assets/#g; s#url(/assets/#url(./assets/#g' dist/index.html
-sed -i 's#url(/fonts/#url(../fonts/#g; s#url(/hero-aikido-clean.png)#url(../hero-aikido-clean.png)#g' dist/assets/index-C1qDmq2B.css
+sed -i 's#url(/fonts/#url(../fonts/#g; s#url(/hero-aikido-clean.png)#url(../hero-aikido.jpg)#g' dist/assets/index-C1qDmq2B.css
 perl -0pi -e 's{<script>\(function\(\)\{function c\(\).*?</script>}{}s' dist/index.html
 # Prioritize the actual brand fonts and avoid a visible fallback-font swap.
 perl -0pi -e 's{<link rel="preload" href="\./assets/_vinext_fonts/[^>]+>\s*}{}g' dist/index.html

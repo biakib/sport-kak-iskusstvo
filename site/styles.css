@@ -335,7 +335,7 @@ footer a{color:var(--paper);text-decoration:none}
 .contact-links a{font-size:23px}
 }
 .site-header{background:linear-gradient(#040605f0,#04060594);border:0}
-.hero{background:#0a0c0b url(./hero-aikido-clean.png) 62%/cover no-repeat;min-height:100svh;padding-top:82px}
+.hero{background:#0a0c0b url(./hero-aikido.jpg) 62%/cover no-repeat;min-height:100svh;padding-top:82px}
 .hero:after{background:linear-gradient(90deg,#050706e6 0%,#050706b8 31%,#05070621 65%,#05070657 100%)}
 .hero-copy .eyebrow{color:var(--paper);margin-bottom:16px}
 .hero-kicker{color:var(--lime);text-transform:uppercase;letter-spacing:1.5px;margin:0 0 17px;font-size:11px;font-weight:800}
