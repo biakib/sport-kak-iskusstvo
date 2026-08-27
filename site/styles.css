@@ -640,3 +640,14 @@ footer a{align-items:center;display:inline-flex}
     margin-top:24px;
   }
 }
+
+/* === Меню: фирменная типографика === */
+.nav a{font-family:Unbounded,Manrope,Arial,sans-serif}
+.nav-links{gap:26px}
+.nav-links a{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;position:relative;padding-bottom:4px;transition:color .18s ease}
+.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--lime);transition:right .22s ease}
+.nav-links a:hover{color:var(--lime)}
+.nav-links a:hover:after{right:0}
+.brand{letter-spacing:.05em}
+.nav-cta{font-size:12px;font-weight:600;letter-spacing:.05em}
+@media (width<=1180px){.nav-links{gap:18px}.nav-links a{font-size:10px;letter-spacing:.06em}}
