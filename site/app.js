@@ -112,17 +112,14 @@ document.querySelectorAll(".mentor").forEach((button, index) => {
 
 const motionPrinciples = {
   attention: {
-    index: "01 / 03",
     title: "Внимание",
     description: "Замечать тело, партнёра и момент — первый шаг к точному движению и спокойному решению.",
   },
   balance: {
-    index: "02 / 03",
     title: "Баланс",
-    description: "Находить устойчивость не в неподвижности, а в способности мягко отвечать на перемены.",
+    description: "Находить устойчивость в способности мягко отвечать на перемены.",
   },
   creation: {
-    index: "03 / 03",
     title: "Созидание",
     description: "Превращать энергию практики в идеи, отношения, события и среду, в которой хочется расти.",
   },
@@ -140,7 +137,7 @@ document.querySelectorAll(".motion-point").forEach((button) => {
       point.setAttribute("aria-pressed", String(active));
     });
 
-    motionDetail.innerHTML = `<p class="motion-index">${principle.index}</p><h3>${principle.title}</h3><p>${principle.description}</p>`;
+    motionDetail.innerHTML = `<h3>${principle.title}</h3><p>${principle.description}</p>`;
   });
 });
 
