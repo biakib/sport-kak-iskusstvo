@@ -5,3 +5,16 @@
 
 /* Правка после удаления номерных меток: убрать пустой отступ над заголовком */
 .principle-grid h3{margin-top:0}
+
+/* === Правки 29.08 === */
+/* Скругление фото раздела */
+.hero-portrait{border-radius:26px}
+/* Плашки принципов: лаймовые, по размеру текста */
+.principle-grid{gap:10px;background:transparent}
+.principle-grid article{background:var(--lime);color:#101410;min-height:0;padding:22px 24px;border-radius:18px}
+.principle-grid h3{color:#101410}
+.principle-grid p{color:#101410d9}
+/* Размер примечания — как у пунктов списка */
+.results .note{font-size:16px}
+/* Отступ под заголовком «Смотреть на динамику точнее.» */
+.technology-grid>div>p:not(.kicker){margin:28px 0 0}
