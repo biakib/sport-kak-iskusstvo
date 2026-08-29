@@ -235,3 +235,13 @@ if ("IntersectionObserver" in window) {
 } else {
   revealTargets.forEach((section) => section.classList.add("is-visible"));
 }
+
+// Якоря из других страниц: повторяем скролл после полной загрузки,
+// иначе поздние картинки сдвигают макет и браузер остаётся наверху.
+function scrollToHash() {
+  if (!location.hash || location.hash === "#top") return;
+  const target = document.querySelector(location.hash);
+  if (target) target.scrollIntoView();
+}
+window.addEventListener("load", scrollToHash);
+window.addEventListener("hashchange", scrollToHash);

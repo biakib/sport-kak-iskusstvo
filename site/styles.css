@@ -654,3 +654,6 @@ footer a{align-items:center;display:inline-flex}
 
 /* Правка после удаления номерных меток: текст на всю ширину карточки */
 .event-services article{grid-template-columns:1fr}
+
+/* Якоря: не прятать заголовки под фиксированной шапкой */
+html{scroll-padding-top:80px}

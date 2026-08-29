@@ -182,3 +182,11 @@ window.addEventListener("resize",function(){if(window.innerWidth>760)close()});
 </div>
 </body>
 </html>
+
+<script>
+window.addEventListener("load", function(){
+  if (!location.hash || location.hash === "#top") return;
+  var t = document.querySelector(location.hash);
+  if (t) t.scrollIntoView();
+});
+</script>
