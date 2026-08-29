@@ -651,3 +651,6 @@ footer a{align-items:center;display:inline-flex}
 .brand{letter-spacing:.05em}
 .nav-cta{font-size:12px;font-weight:600;letter-spacing:.05em}
 @media (width<=1180px){.nav-links{gap:18px}.nav-links a{font-size:10px;letter-spacing:.06em}}
+
+/* Правка после удаления номерных меток: текст на всю ширину карточки */
+.event-services article{grid-template-columns:1fr}
