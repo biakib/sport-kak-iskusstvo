@@ -16,10 +16,42 @@
 <link rel="stylesheet" href="./neuro-fixes.css?v=1"/>
 <link rel="stylesheet" href="./direction-brand.css?v=1"/>
 <link rel="stylesheet" href="./neuro-gallery.css?v=1"/>
+<link rel="stylesheet" href="./site-header.css?v=1"/>
+<style>body{padding-top:70px}</style>
 <title>Динамическая нейродетекция — Спорт как искусство</title>
 </head>
 <body>
-<header class="page-header"><nav class="shell page-nav" aria-label="Навигация страницы"><a class="brand" href="./index.html" aria-label="Спорт как искусство — главная"><img src="./stork-symbol-full.jpg" alt=""/><span>СПОРТ<br/>КАК ИСКУССТВО</span></a><div class="page-links"><a href="#method">Метод</a><a href="#protocol">Протокол</a><a href="#safety">Безопасность</a></div><a class="back-link" href="./index.html#directions">Все направления <span class="page-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></nav></header>
+<header class="site-header">
+<nav class="site-nav" aria-label="Главная навигация">
+<a class="site-brand" href="/"><img src="/stork-symbol-full.jpg" alt=""/> <span>СПОРТ<br/>КАК ИСКУССТВО</span></a>
+<div class="site-links">
+<a href="/#project">Проект</a>
+<a href="/#directions">Направления</a>
+<a href="/#team">Наставники</a>
+<a href="/#events">События</a>
+<a href="/links">Площадки</a>
+</div>
+<a class="site-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
+<button class="sh-burger" type="button" aria-controls="sh-mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
+</nav>
+<div class="sh-mobile" id="sh-mobile-nav" hidden>
+<p>Навигация</p>
+<a href="/#project">Проект</a>
+<a href="/#directions">Направления</a>
+<a href="/#team">Наставники</a>
+<a href="/#events">События</a>
+<a href="/links">Площадки</a>
+<a class="sh-mobile-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
+</div>
+</header>
+<script>
+(function(){var t=document.querySelector(".sh-burger"),n=document.querySelector(".sh-mobile");
+function close(){if(!t||!n)return;t.setAttribute("aria-expanded","false");t.setAttribute("aria-label","Открыть меню");n.hidden=true}
+if(t&&n){t.addEventListener("click",function(e){e.stopPropagation();var open=t.getAttribute("aria-expanded")!=="true";if(!open)return close();t.setAttribute("aria-expanded","true");t.setAttribute("aria-label","Закрыть меню");n.hidden=false});
+n.querySelectorAll("a").forEach(function(l){l.addEventListener("click",close)});
+document.addEventListener("click",function(e){if(!e.target.closest(".sh-mobile,.sh-burger"))close()});
+window.addEventListener("resize",function(){if(window.innerWidth>760)close()})}})();
+</script>
 <main>
 <section class="hero"><div class="shell hero-grid"><div class="hero-copy"><p class="kicker">03 / технология</p><h1>Динамическая<br/><em>нейродетекция</em></h1><p>Психофитнес и внутренняя навигация через наблюдение динамики состояния.</p><a class="lime-button" href="#method">Как это работает <span class="page-arrow page-arrow-down" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 14l7 7 7-7"/></svg></span></a></div><figure><img src="./images/neuro/brain.png" alt="Художественная визуализация мозга и нейросети"/><figcaption>Сигнал + диалог + обратная связь</figcaption></figure></div></section>
 <section class="problem shell"><p class="kicker pink">Зачем это нужно</p><div class="intro-grid"><h2>Состояние можно<br/><em>заметить точнее.</em></h2><p>Обычно внутреннее состояние либо описывают словами, либо исследуют в лаборатории. Динамическая нейродетекция создаёт промежуточный формат: персональный сигнал, контекст запроса и быстрая обратная связь во время практики.</p></div><div class="problem-grid"><article><span>01</span><h3>Субъективность</h3><p>Самоотчёт важен, но зависит от языка, памяти и интерпретации человека.</p></article><article><span>02</span><h3>Высокий порог</h3><p>Сложная диагностика требует оборудования, специалистов и подготовленной среды.</p></article><article><span>03</span><h3>Нет быстрой связи</h3><p>Изменение состояния трудно увидеть прямо в моменте практики.</p></article></div></section>

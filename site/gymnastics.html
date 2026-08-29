@@ -16,20 +16,42 @@
 <link rel="stylesheet" href="./page-icons.css?v=1"/>
 <link rel="stylesheet" href="./page-icons-v2.css?v=1"/>
 <link rel="stylesheet" href="./direction-brand.css?v=1"/>
+<link rel="stylesheet" href="./site-header.css?v=1"/>
+<style>body{padding-top:70px}</style>
 <title>Оздоровительная гимнастика Ивана Егорова — Спорт как искусство</title>
 </head>
 <body>
-<header class="page-header">
-  <nav class="shell page-nav" aria-label="Навигация страницы">
-    <a class="brand" href="./index.html" aria-label="Спорт как искусство — главная">
-      <img src="./stork-symbol-full.jpg" alt=""/><span>СПОРТ<br/>КАК ИСКУССТВО</span>
-    </a>
-    <div class="page-links">
-      <a href="#about">О системе</a><a href="#practice">Практика</a><a href="#technology">Технологии</a>
-    </div>
-    <a class="back-link" href="./index.html#directions">Все направления <span class="page-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a>
-  </nav>
+<header class="site-header">
+<nav class="site-nav" aria-label="Главная навигация">
+<a class="site-brand" href="/"><img src="/stork-symbol-full.jpg" alt=""/> <span>СПОРТ<br/>КАК ИСКУССТВО</span></a>
+<div class="site-links">
+<a href="/#project">Проект</a>
+<a href="/#directions">Направления</a>
+<a href="/#team">Наставники</a>
+<a href="/#events">События</a>
+<a href="/links">Площадки</a>
+</div>
+<a class="site-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
+<button class="sh-burger" type="button" aria-controls="sh-mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
+</nav>
+<div class="sh-mobile" id="sh-mobile-nav" hidden>
+<p>Навигация</p>
+<a href="/#project">Проект</a>
+<a href="/#directions">Направления</a>
+<a href="/#team">Наставники</a>
+<a href="/#events">События</a>
+<a href="/links">Площадки</a>
+<a class="sh-mobile-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
+</div>
 </header>
+<script>
+(function(){var t=document.querySelector(".sh-burger"),n=document.querySelector(".sh-mobile");
+function close(){if(!t||!n)return;t.setAttribute("aria-expanded","false");t.setAttribute("aria-label","Открыть меню");n.hidden=true}
+if(t&&n){t.addEventListener("click",function(e){e.stopPropagation();var open=t.getAttribute("aria-expanded")!=="true";if(!open)return close();t.setAttribute("aria-expanded","true");t.setAttribute("aria-label","Закрыть меню");n.hidden=false});
+n.querySelectorAll("a").forEach(function(l){l.addEventListener("click",close)});
+document.addEventListener("click",function(e){if(!e.target.closest(".sh-mobile,.sh-burger"))close()});
+window.addEventListener("resize",function(){if(window.innerWidth>760)close()})}})();
+</script>
 
 <main>
   <section class="gym-hero">
@@ -63,9 +85,9 @@
     <div class="shell">
       <div class="section-head"><p class="kicker">Как это работает</p><p>Простые, безопасные и естественные упражнения — с постепенным развитием без чрезмерной нагрузки.</p></div>
       <div class="principle-grid">
-        <article><span>01</span><h3>Тело</h3><p>Гармоничное развитие организма, опорно-двигательного аппарата и восстановительных процессов.</p></article>
-        <article><span>02</span><h3>Внимание</h3><p>Концентрация, эмоциональное равновесие, сон и способность замечать состояние здесь и сейчас.</p></article>
-        <article><span>03</span><h3>Ресурс</h3><p>Постепенное раскрытие физических и внутренних возможностей, движение к своей оптимальной версии.</p></article>
+        <article><h3>Тело</h3><p>Гармоничное развитие организма, опорно-двигательного аппарата и восстановительных процессов.</p></article>
+        <article><h3>Внимание</h3><p>Концентрация, эмоциональное равновесие, сон и способность замечать состояние здесь и сейчас.</p></article>
+        <article><h3>Ресурс</h3><p>Постепенное раскрытие физических и внутренних возможностей, движение к своей оптимальной версии.</p></article>
       </div>
     </div>
   </section>

@@ -16,10 +16,42 @@
 <link rel="stylesheet" href="./page-icons-v2.css?v=1"/>
 <link rel="stylesheet" href="./direction-brand.css?v=1"/>
 <link rel="stylesheet" href="./corporate-aikido-fixes.css?v=1"/>
+<link rel="stylesheet" href="./site-header.css?v=1"/>
+<style>body{padding-top:70px}</style>
 <title>Корпоративное айкидо — Спорт как искусство</title>
 </head>
 <body>
-<header class="page-header"><nav class="shell page-nav" aria-label="Навигация страницы"><a class="brand" href="./index.html" aria-label="Спорт как искусство — главная"><img src="./stork-symbol-full.jpg" alt=""/><span>СПОРТ<br/>КАК ИСКУССТВО</span></a><div class="page-links"><a href="#value">Для команды</a><a href="#formats">Форматы</a><a href="#contact">Контакты</a></div><a class="back-link" href="./index.html#directions">Все направления <span class="page-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></nav></header>
+<header class="site-header">
+<nav class="site-nav" aria-label="Главная навигация">
+<a class="site-brand" href="/"><img src="/stork-symbol-full.jpg" alt=""/> <span>СПОРТ<br/>КАК ИСКУССТВО</span></a>
+<div class="site-links">
+<a href="/#project">Проект</a>
+<a href="/#directions">Направления</a>
+<a href="/#team">Наставники</a>
+<a href="/#events">События</a>
+<a href="/links">Площадки</a>
+</div>
+<a class="site-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
+<button class="sh-burger" type="button" aria-controls="sh-mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
+</nav>
+<div class="sh-mobile" id="sh-mobile-nav" hidden>
+<p>Навигация</p>
+<a href="/#project">Проект</a>
+<a href="/#directions">Направления</a>
+<a href="/#team">Наставники</a>
+<a href="/#events">События</a>
+<a href="/links">Площадки</a>
+<a class="sh-mobile-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
+</div>
+</header>
+<script>
+(function(){var t=document.querySelector(".sh-burger"),n=document.querySelector(".sh-mobile");
+function close(){if(!t||!n)return;t.setAttribute("aria-expanded","false");t.setAttribute("aria-label","Открыть меню");n.hidden=true}
+if(t&&n){t.addEventListener("click",function(e){e.stopPropagation();var open=t.getAttribute("aria-expanded")!=="true";if(!open)return close();t.setAttribute("aria-expanded","true");t.setAttribute("aria-label","Закрыть меню");n.hidden=false});
+n.querySelectorAll("a").forEach(function(l){l.addEventListener("click",close)});
+document.addEventListener("click",function(e){if(!e.target.closest(".sh-mobile,.sh-burger"))close()});
+window.addEventListener("resize",function(){if(window.innerWidth>760)close()})}})();
+</script>
 <main>
 <section class="hero"><div class="shell hero-grid"><div class="hero-copy"><p class="kicker">04 / направление</p><h1>Корпоративное<br/><em>айкидо</em></h1><p>Практика для компаний, которые инвестируют не только в процессы, но и в людей.</p><a class="lime-button" href="#contact">Обсудить программу <span class="page-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div><figure><img src="./images/corporate-aikido-practice.webp" alt="Практика айкидо на татами"/><figcaption>Взаимодействие в движении</figcaption></figure></div><i class="hero-ring ring-one" aria-hidden="true"></i><i class="hero-ring ring-two" aria-hidden="true"></i></section>
 <section class="statement shell" id="value"><p class="kicker pink">Что получает команда</p><div class="statement-grid"><h2>Не тимбилдинг<br/>для галочки.<br/><em>Опыт взаимодействия.</em></h2><p>Айкидо помогает прожить через движение то, что обычно обсуждают в переговорных: внимание к партнёру, координацию, границы, устойчивость и спокойную реакцию на изменения.</p></div></section>
