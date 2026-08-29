@@ -28,3 +28,6 @@
 main figure:not(.wide-photo){border-radius:26px;overflow:hidden}
 .wide-photo img{border-radius:26px}
 .wide-photo:after{border-radius:26px}
+
+/* Показывать поднятую руку слева: кадр смещён к левому краю фото */
+.hero-portrait img{object-position:8% 18%}
