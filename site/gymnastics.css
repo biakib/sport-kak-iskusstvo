@@ -18,3 +18,13 @@
 .results .note{font-size:16px}
 /* Отступ под заголовком «Смотреть на динамику точнее.» */
 .technology-grid>div>p:not(.kicker){margin:28px 0 0}
+
+/* === Правки фото и отступов === */
+/* Отступ между текстом и фото в шапке (десктоп) */
+.gym-hero-grid{gap:64px}
+/* Надпись на фото: тёмная подложка для читаемости */
+.hero-portrait figcaption{background:#090b0ad9;padding:9px 14px;border-radius:999px;right:14px;bottom:14px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+/* Единое скругление всех фото страницы */
+main figure:not(.wide-photo){border-radius:26px;overflow:hidden}
+.wide-photo img{border-radius:26px}
+.wide-photo:after{border-radius:26px}
