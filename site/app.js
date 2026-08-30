@@ -241,7 +241,9 @@ if ("IntersectionObserver" in window) {
 function scrollToHash() {
   if (!location.hash || location.hash === "#top") return;
   const target = document.querySelector(location.hash);
-  if (target) target.scrollIntoView();
+  if (!target) return;
+  const y = target.getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({ top: Math.max(0, y), behavior: "instant" });
 }
 window.addEventListener("load", scrollToHash);
 window.addEventListener("hashchange", scrollToHash);
