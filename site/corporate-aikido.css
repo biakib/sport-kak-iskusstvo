@@ -6,3 +6,8 @@
 .hero figure{border-radius:26px}
 .program-grid h3{margin-top:0}
 .outcomes-grid h3,.steps-grid h3{margin-top:0}
+
+/* === Правки: карточки по высоте текста, скругление фото === */
+.outcomes-grid article,.program-grid article,.steps-grid article{min-height:0}
+.difference img{border-radius:26px}
+.difference figure:after{border-radius:26px}
