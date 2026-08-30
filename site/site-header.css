@@ -1,3 +1,12 @@
+
+/* Шрифты — те же файлы и веса, что на главной странице */
+@font-face{font-family:Unbounded;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:500;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:700;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
+@font-face{font-family:Unbounded;font-weight:800;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
+@font-face{font-family:Manrope;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:700;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:800;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
 /* Единая шапка сайта — подключается на всех страницах */
 :root{--sh-lime:#b8d63a;--sh-pink:#b83d63;--sh-paper:#e9e6dc}
 .site-header{z-index:40;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);background:linear-gradient(#040605f0,#04060594);position:fixed;top:0;left:0;right:0}
@@ -9,7 +18,7 @@
 .site-links a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--sh-lime,#b8d63a);transition:right .22s ease}
 .site-links a:hover{color:var(--sh-lime,#b8d63a)}
 .site-links a:hover:after{right:0}
-.site-cta{background:var(--sh-lime,#b8d63a);border-radius:999px;color:#101410!important;padding:11px 16px!important;text-decoration:none;font-family:Unbounded,Manrope,Arial,sans-serif;font-size:15px;font-weight:750;letter-spacing:.05em;display:flex;align-items:center}
+.site-cta{background:var(--sh-lime,#b8d63a);border-radius:999px;color:#101410!important;padding:11px 16px!important;text-decoration:none;font-family:Unbounded,Manrope,Arial,sans-serif;font-size:13px;font-weight:800;letter-spacing:.05em;display:flex;align-items:center}
 .sh-arrow{flex:none;width:13px;height:13px;margin-left:4px;transition:transform .2s;display:inline-block;position:relative}
 .sh-arrow:before{content:"";transform-origin:center;background:currentColor;border-radius:2px;width:13px;height:2px;position:absolute;top:7px;left:1px;transform:rotate(-45deg)}
 .sh-arrow:after{content:"";border-top:2px solid currentColor;border-right:2px solid currentColor;border-radius:1px;width:7px;height:7px;position:absolute;top:1px;right:1px}
