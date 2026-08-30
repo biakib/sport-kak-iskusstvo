@@ -16,7 +16,6 @@
 <link rel="stylesheet" href="./neuro-fixes.css?v=1"/>
 <link rel="stylesheet" href="./direction-brand.css?v=1"/>
 <link rel="stylesheet" href="./neuro-gallery.css?v=1"/>
-<link rel="stylesheet" href="./site-header.css?v=4"/>
 <style>body{padding-top:82px}</style>
 <title>Динамическая нейродетекция — Спорт как искусство</title>
 <style>
@@ -42,38 +41,99 @@
 @media(max-width:1180px){.site-links,.nav-links{gap:18px}.site-links a,.nav-links a{font-size:10px;letter-spacing:.06em}}
 </style>
 
+<style>
+.site-header{z-index:30;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);background:linear-gradient(#040605f0,#04060594);position:fixed;top:0;left:0;right:0}
+.shell{width:min(1160px,calc(100% - 48px));margin:auto}
+.nav{height:82px;display:flex;justify-content:space-between;align-items:center;position:relative}
+.brand{color:var(--paper);display:flex;align-items:center;gap:8px;font-size:15px;font-weight:750;line-height:.92;text-decoration:none;font-family:Unbounded,Manrope,Arial,sans-serif;letter-spacing:.05em}
+.brand img{object-fit:contain;border-radius:7px;width:40px;height:40px}
+.nav-links{display:flex;gap:26px}
+.nav-links a{font-family:Unbounded,Manrope,Arial,sans-serif;color:var(--paper);text-decoration:none;font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;position:relative;padding-bottom:4px;transition:color .18s ease}
+.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--lime);transition:right .22s ease}
+.nav-links a:hover{color:var(--lime)}
+.nav-links a:hover:after{right:0}
+.nav-links a[aria-current=page]{color:var(--lime)}
+.nav-links a[aria-current=page]:after{right:0}
+.nav-cta{background:var(--lime);border-radius:999px;color:#101410!important;padding:11px 16px!important;text-decoration:none;font-family:Unbounded,Manrope,Arial,sans-serif;font-size:15px;font-weight:750;letter-spacing:.05em}
+.nav-cta span{color:var(--pink);margin-left:4px}
+.arrow-icon{vertical-align:-2px;flex:none;width:13px;height:13px;margin-left:4px;transition:transform .2s;display:inline-block;position:relative}
+.arrow-icon:before{content:"";transform-origin:center;background:currentColor;border-radius:2px;width:13px;height:2px;position:absolute;top:7px;left:1px;transform:rotate(-45deg)}
+.arrow-icon:after{content:"";border-top:2px solid currentColor;border-right:2px solid currentColor;border-radius:1px;width:7px;height:7px;position:absolute;top:1px;right:1px}
+a:hover .arrow-icon{transform:translate(2px,-2px)}
+.mobile-menu-toggle,.mobile-nav{display:none}
+@media(max-width:1180px){
+.nav-links{gap:18px}
+.nav-links a{font-size:10px;letter-spacing:.06em}
+}
+@media(max-width:760px){
+
+.nav-links{display:none}
+
+.nav-cta{display:none}
+
+.mobile-menu-toggle{color:var(--paper);cursor:pointer;background:#ffffff0d;border:1px solid #ffffff38;border-radius:50%;justify-content:center;align-items:center;width:42px;height:42px;padding:0;display:flex}
+
+.mobile-menu-toggle span{background:currentColor;border-radius:999px;width:17px;height:2px}
+
+.brand{font-size:9px}
+
+.brand img{width:36px;height:36px}
+
+.mobile-nav{z-index:29;background:#0d100e;border-top:1px solid #ffffff1f;box-shadow:0 18px 36px #0000008a;max-height:calc(100dvh - 82px);overflow-y:auto;padding:25px 16px 30px;position:fixed;top:82px;right:0;left:0}
+
+.mobile-nav:not([hidden]){display:grid}
+
+.mobile-nav>p{color:var(--lime);text-transform:uppercase;letter-spacing:1.5px;margin:0 0 13px;font-size:10px;font-weight:800}
+
+.mobile-nav>a:not(.mobile-nav-cta){color:var(--paper);border-top:1px solid #ffffff22;justify-content:space-between;align-items:center;padding:14px 0;font-family:Unbounded,Manrope,Arial,sans-serif;font-size:22px;font-weight:500;text-decoration:none;display:flex}
+
+.mobile-nav>a:not(.mobile-nav-cta) span{color:var(--pink);font-family:Manrope,Arial,sans-serif;font-size:10px;font-weight:800}
+
+.mobile-nav-cta{color:#101410!important;background:var(--lime);border-radius:999px;justify-content:center;align-items:center;gap:10px;margin-top:15px;padding:14px 18px;font-size:13px!important;font-weight:800!important;text-decoration:none;display:flex}
+
+.mobile-nav-cta .arrow-icon{color:var(--pink)}
+}
+@media(max-width:760px){
+.nav{padding:0 16px}
+.nav-links{display:none}
+}
+</style>
 </head>
 <body>
 <header class="site-header">
-<nav class="site-nav" aria-label="Главная навигация">
-<a class="site-brand" href="/"><img src="/stork-symbol-full.jpg" alt=""/> <span>СПОРТ<br/>КАК ИСКУССТВО</span></a>
-<div class="site-links">
+<nav class="nav shell" aria-label="Главная навигация">
+<a class="brand" href="/"><img src="/stork-symbol-full.jpg" alt=""/> <span>СПОРТ<br/>КАК ИСКУССТВО</span></a>
+<div class="nav-links">
 <a href="/#project">Проект</a>
 <a href="/#directions">Направления</a>
 <a href="/#team">Наставники</a>
 <a href="/#events">События</a>
 <a href="/links">Площадки</a>
 </div>
-<a class="site-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
-<button class="sh-burger" type="button" aria-controls="sh-mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
+<a class="nav-cta" href="https://t.me/vanzep">Связь с нами <span class="arrow-icon" aria-hidden="true"></span></a>
+<button class="mobile-menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
 </nav>
-<div class="sh-mobile" id="sh-mobile-nav" hidden>
+<div class="mobile-nav" id="mobile-nav" hidden>
 <p>Навигация</p>
 <a href="/#project">Проект</a>
 <a href="/#directions">Направления</a>
 <a href="/#team">Наставники</a>
 <a href="/#events">События</a>
 <a href="/links">Площадки</a>
-<a class="sh-mobile-cta" href="https://t.me/vanzep">Связь с нами <span class="sh-arrow" aria-hidden="true"></span></a>
+<a class="mobile-nav-cta" href="https://t.me/vanzep">Связь с нами <span class="arrow-icon" aria-hidden="true"></span></a>
 </div>
 </header>
 <script>
-(function(){var t=document.querySelector(".sh-burger"),n=document.querySelector(".sh-mobile");
+(function(){
+var t=document.querySelector(".mobile-menu-toggle"),n=document.querySelector(".mobile-nav");
 function close(){if(!t||!n)return;t.setAttribute("aria-expanded","false");t.setAttribute("aria-label","Открыть меню");n.hidden=true}
-if(t&&n){t.addEventListener("click",function(e){e.stopPropagation();var open=t.getAttribute("aria-expanded")!=="true";if(!open)return close();t.setAttribute("aria-expanded","true");t.setAttribute("aria-label","Закрыть меню");n.hidden=false});
+if(t&&n){
+t.addEventListener("click",function(e){e.stopPropagation();var open=t.getAttribute("aria-expanded")!=="true";if(!open)return close();t.setAttribute("aria-expanded","true");t.setAttribute("aria-label","Закрыть меню");n.hidden=false});
 n.querySelectorAll("a").forEach(function(l){l.addEventListener("click",close)});
-document.addEventListener("click",function(e){if(!e.target.closest(".sh-mobile,.sh-burger"))close()});
-window.addEventListener("resize",function(){if(window.innerWidth>760)close()})}})();
+document.addEventListener("click",function(e){if(!e.target.closest(".mobile-nav,.mobile-menu-toggle"))close()});
+window.addEventListener("resize",function(){if(window.innerWidth>760)close()});
+}
+})();
 </script>
 <main>
 <section class="hero"><div class="shell hero-grid"><div class="hero-copy"><h1>Динамическая<br/><em>нейродетекция</em></h1><p>Психофитнес и внутренняя навигация через наблюдение динамики состояния.</p><a class="lime-button" href="#method">Как это работает <span class="page-arrow page-arrow-down" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 14l7 7 7-7"/></svg></span></a></div><figure><img src="./images/neuro/hero-session.jpg" alt="Участники сессии в нейродетекторах"/><figcaption>Сигнал + диалог + обратная связь</figcaption></figure></div></section>
