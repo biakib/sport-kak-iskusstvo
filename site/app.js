@@ -1,15 +1,3 @@
-if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-
-function resetInitialScroll() {
-  if (window.location.hash) {
-    history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
-  }
-  window.scrollTo(0, 0);
-}
-
-resetInitialScroll();
-window.addEventListener("pageshow", resetInitialScroll);
-
 const mentors = [
   {
     name: "Иван Егоров",
