@@ -669,3 +669,12 @@ h1,h2,h3{text-wrap:balance}
 
 
 .contact .kicker{color:#8f1f44}
+
+/* === Карточки команды: по высоте контента, воздух, типографика === */
+.mentor{grid-template-rows:auto 1fr;min-height:0}
+.mentor-photo{height:320px}
+.mentor-photo img{object-position:center 22%}
+.mentor-info{padding:20px 20px 18px}
+.mentor-info h3{font-size:21px;font-weight:800;letter-spacing:-.02em;line-height:1.08;margin:0 0 9px}
+.mentor-info p{font-size:13.5px;line-height:1.48;color:#c9cfc4;margin:0 0 14px;flex-grow:1}
+.mentor-info b{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#b8d63a;margin-top:auto}
