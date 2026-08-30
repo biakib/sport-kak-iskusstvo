@@ -19,3 +19,7 @@
 /* Карточка строго по размеру фото (никаких фиксированных высот) */
 .hero figure{height:auto}
 .hero figure img{height:auto}
+
+/* Карточка повторяет пропорцию файла (0.9) — фото совпадает с рамкой точно */
+.hero figure{height:auto;aspect-ratio:0.9}
+.hero figure img{object-position:50% 40%}
