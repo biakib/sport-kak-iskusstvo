@@ -15,3 +15,7 @@
 
 /* Мозг: показываем верхнюю часть (мозг целиком) */
 .hero figure img{object-position:50% 22%}
+
+/* Карточка строго по размеру фото (никаких фиксированных высот) */
+.hero figure{height:auto}
+.hero figure img{height:auto}
