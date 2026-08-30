@@ -27,3 +27,14 @@
 /* Все карточки с фото — единое скругление */
 .method figure,.session-visual-grid figure{border-radius:26px;overflow:hidden}
 .session-visual-grid figure img,.method figure img{display:block}
+
+html{color-scheme:dark}
+.sh-mobile,.sm-mobile{overscroll-behavior:contain}
+
+/* === Доступность и мелочи (аудит) === */
+a:focus-visible,button:focus-visible{outline:2px solid #cbf23d;outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+html{color-scheme:dark}
+body{touch-action:manipulation}
+h1,h2,h3{text-wrap:balance}
+

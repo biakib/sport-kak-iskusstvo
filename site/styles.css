@@ -657,3 +657,13 @@ footer a{align-items:center;display:inline-flex}
 
 /* Якоря: не прятать заголовки под фиксированной шапкой */
 html{scroll-padding-top:80px}
+
+html{color-scheme:dark}
+
+/* === Доступность и мелочи (аудит) === */
+a:focus-visible,button:focus-visible{outline:2px solid #cbf23d;outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+html{color-scheme:dark}
+body{touch-action:manipulation}
+h1,h2,h3{text-wrap:balance}
+
