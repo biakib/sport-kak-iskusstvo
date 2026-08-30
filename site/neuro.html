@@ -26,6 +26,22 @@
 .hero figure img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:50% 40%;display:block;position:static;filter:none}
 .hero figure figcaption{position:absolute;left:16px;bottom:16px;z-index:2;background:#090b0ad9;padding:9px 14px;border-radius:999px}
 </style>
+<style>
+/* === Шапка: каноничные стили (инлайн, устойчивы к кэшу) === */
+.site-header,.site-header{z-index:40;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);background:linear-gradient(#040605f0,#04060594);position:fixed;top:0;left:0;right:0}
+.site-nav,.site-nav{width:min(1160px,calc(100% - 48px));margin:0 auto;height:82px;display:flex;justify-content:space-between;align-items:center;position:relative;gap:14px}
+.nav{height:82px}
+.site-brand,.brand{color:#e9e6dc;display:flex;align-items:center;gap:8px;font-size:15px;font-weight:750;line-height:.92;text-decoration:none;font-family:Unbounded,Manrope,Arial,sans-serif;letter-spacing:.05em}
+.site-brand img,.brand img{object-fit:contain;border-radius:7px;width:40px;height:40px}
+.site-links,.nav-links{display:flex;gap:26px}
+.site-links a,.nav-links a{font-family:Unbounded,Manrope,Arial,sans-serif;color:#e9e6dc;text-decoration:none;font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;position:relative;padding-bottom:4px;transition:color .18s ease}
+.site-links a:after,.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:#b8d63a;transition:right .22s ease}
+.site-links a:hover,.nav-links a:hover{color:#b8d63a}
+.site-links a:hover:after,.nav-links a:hover:after{right:0}
+.site-cta,.nav-cta{background:#b8d63a;border-radius:999px;color:#101410!important;padding:11px 16px!important;text-decoration:none;font-family:Unbounded,Manrope,Arial,sans-serif;font-size:15px;font-weight:750;letter-spacing:.05em;display:flex;align-items:center}
+@media(max-width:1180px){.site-links,.nav-links{gap:18px}.site-links a,.nav-links a{font-size:10px;letter-spacing:.06em}}
+</style>
+
 </head>
 <body>
 <header class="site-header">
