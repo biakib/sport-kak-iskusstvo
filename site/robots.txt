@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://egorovaiki.ru/sitemap.xml
