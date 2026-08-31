@@ -35,3 +35,7 @@ h1,h2,h3{text-wrap:balance}
 
 /* Заголовок программы — по центру высоты фото */
 .program-title{align-self:center}
+
+/* Фото программы: квадрат 320px, соразмерно текстам */
+.program-photo img{width:100%;max-width:320px;aspect-ratio:1;height:auto;border-radius:0}
+.program-photo{border-radius:20px;max-width:320px}
