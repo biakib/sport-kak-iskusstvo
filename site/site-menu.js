@@ -49,8 +49,8 @@
   var linksHtml = ITEMS.map(function (it) {
     return '<a href="' + it[0] + '">' + it[1] + '</a>';
   }).join('');
-  var mobileHtml = ITEMS.map(function (it, i) {
-    return '<a href="' + it[0] + '">' + it[1] + ' <span class="sm-num">0' + (i + 1) + '</span></a>';
+  var mobileHtml = ITEMS.map(function (it) {
+    return '<a href="' + it[0] + '">' + it[1] + '</a>';
   }).join('');
 
   header.innerHTML =
