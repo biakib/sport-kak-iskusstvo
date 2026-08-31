@@ -14,44 +14,44 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon-v5.png"/>
 <style>
 @font-face{font-family:Unbounded;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:600;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
 @font-face{font-family:Manrope;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
 @font-face{font-family:Manrope;font-weight:700;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
 @font-face{font-family:Manrope;font-weight:800;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
 :root{--bg:#121812;--card:#1a211a;--line:#333b33;--lime:#b8d63a;--rose:#c94d72;--paper:#efece2;--muted:#b4bab0}
 *{box-sizing:border-box}
 html{color-scheme:dark}
-body{margin:0;background:radial-gradient(110% 55% at 50% 0%,#182018 0%,var(--bg) 55%);color:var(--paper);font-family:Manrope,Arial,sans-serif;min-height:100vh;touch-action:manipulation}
-a:focus-visible,button:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:6px}
-.wrap{max-width:640px;margin:0 auto;padding:30px 20px 52px}
-.head{text-align:center;margin-bottom:26px}
-.head .kicker{color:var(--lime);text-transform:uppercase;letter-spacing:1.6px;font-size:11px;font-weight:800;margin:0 0 12px}
-.head h1{font-family:Unbounded,Manrope,Arial,sans-serif;font-size:clamp(18px,4.6vw,24px);line-height:1.12;letter-spacing:-.01em;text-transform:uppercase;margin:0;text-wrap:balance}
-.head p{margin:6px auto 0;color:var(--muted);font-size:13.5px;line-height:1.45;max-width:320px}
-.cta{display:flex;gap:10px;margin:0 0 30px}
-.cta a{flex:1;text-decoration:none;text-align:center;padding:15px 12px;border-radius:14px;font-weight:800;font-size:14px}
-.cta .primary{background:var(--lime);color:#101410;box-shadow:0 10px 30px #b8d63a26}
-.cta .secondary{border:1px solid var(--line);color:var(--paper)}
-.cta .secondary:hover{border-color:var(--lime)}
-.group{margin-bottom:24px}
-.group>h2{display:flex;align-items:center;gap:10px;font-family:Unbounded,Manrope,Arial,sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--lime);margin:0 0 12px}
-.group>h2:after{content:"";flex:1;height:1px;background:var(--line)}
-.links{display:grid;gap:10px}
+body{margin:0;background:#121812;color:#efece2;font-family:Manrope,Arial,sans-serif;min-height:100vh;touch-action:manipulation}
+a:focus-visible,button:focus-visible{outline:2px solid #b8d63a;outline-offset:3px;border-radius:6px}
+.wrap{max-width:640px;margin:0 auto;padding:24px 18px 44px}
+.head{text-align:center;margin-bottom:18px}
+.head .kicker{color:#b8d63a;text-transform:uppercase;letter-spacing:1.6px;font-size:10.5px;font-weight:800;margin:0 0 8px}
+.head h1{font-family:Unbounded,Manrope,Arial,sans-serif;font-size:17px;line-height:1.15;letter-spacing:-.01em;text-transform:uppercase;margin:0;text-wrap:balance}
+.head p{margin:8px auto 0;color:#b4bab0;font-size:13px;line-height:1.45;max-width:320px}
+.cta{display:flex;gap:10px;margin:0 0 24px}
+.cta a{flex:1;text-decoration:none;text-align:center;padding:14px 12px;border-radius:12px;font-weight:800;font-size:13.5px;font-family:Manrope,Arial,sans-serif}
+.cta .primary{background:#b8d63a;color:#101410;box-shadow:0 10px 26px #b8d63a30}
+.cta .primary:hover{filter:brightness(1.06)}
+.cta .secondary{border:1px solid #333b33;color:#efece2}
+.cta .secondary:hover{border-color:#b8d63a}
+.group{margin-bottom:18px}
+.group>h2{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#b8d63a;margin:0 0 10px}
+.group>h2:after{content:"";flex:1;height:1px;background:#333b33}
+.links{display:grid;gap:8px}
 @media(min-width:560px){.links{grid-template-columns:1fr 1fr}}
-.links a{display:flex;align-items:center;gap:13px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 15px;text-decoration:none;color:var(--paper);transition:border-color .18s,transform .18s}
-.links a:hover{border-color:var(--lime);transform:translateY(-2px)}
-.links a:active{transform:translateY(0) scale(.99)}
-.logo{flex-shrink:0;width:38px;height:38px;display:grid;place-items:center;background:#b8d63a17;border:1px solid #b8d63a30;border-radius:11px}
-.logo svg{width:19px;height:19px;fill:var(--lime)}
-.logo svg.stroke{fill:none;stroke:var(--lime);stroke-width:1.7}
-.links a span.name{font-weight:700;font-size:14px;line-height:1.2}
-.links a span.arr{margin-left:auto;color:var(--rose);font-weight:800;font-size:17px}
-.contacts{margin:32px 0 0;padding-top:22px;border-top:1px solid var(--line);display:grid;gap:9px}
-.contacts a{color:var(--paper);text-decoration:none;font-weight:700;font-size:15px;text-align:center}
-.contacts a:hover{color:var(--lime)}
-.foot{margin-top:26px;text-align:center;color:#6d756a;font-size:12px;line-height:1.6}
-.foot a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
-.foot a:hover{color:var(--lime);border-color:var(--lime)}
+.links a{display:flex;align-items:center;gap:12px;background:#1a211a;border:1px solid #333b33;border-radius:12px;padding:13px 14px;text-decoration:none;color:#efece2;transition:border-color .18s,transform .18s}
+.links a:hover{border-color:#b8d63a;transform:translateY(-2px)}
+.logo{flex-shrink:0;width:36px;height:36px;display:grid;place-items:center;background:#b8d63a17;border:1px solid #b8d63a30;border-radius:10px}
+.logo svg{width:18px;height:18px;fill:#b8d63a}
+.logo svg.stroke{fill:none;stroke:#b8d63a;stroke-width:1.7}
+.links a span.name{font-weight:700;font-size:13.5px;line-height:1.25}
+.links a span.name small{display:block;font-weight:500;font-size:10.5px;color:#b4bab0;margin-top:2px}
+.links a span.arr{margin-left:auto;color:#c94d72;font-weight:800;font-size:16px}
+.contacts{margin:22px 0 0;padding-top:16px;border-top:1px solid #333b33;display:grid;gap:8px}
+.contacts a{color:#efece2;text-decoration:none;font-weight:700;font-size:14px;text-align:center}
+.contacts a:hover{color:#b8d63a}
+.foot{margin-top:22px;text-align:center;color:#6d756a;font-size:11.5px;line-height:1.6}
+.foot a{color:#b4bab0;text-decoration:none;border-bottom:1px solid #333b33}
+.foot a:hover{color:#b8d63a;border-color:#b8d63a}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -97,7 +97,7 @@ window.addEventListener("resize",function(){if(window.innerWidth>760)close()});
 <section class="group">
 <h2>Федерация Айкидо России</h2>
 <div class="links">
-<a href="https://vk.ru/russian_aikido_federation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><path d="M3 7.7C3.1 14.4 6.5 18.4 12.5 18.4h.4v-3.8c2.1.2 3.7 1.7 4.3 3.8h3c-.8-2.9-2.9-4.5-4.2-5.1 1.3-.8 3.1-2.7 3.5-5.6h-2.7c-.5 2.3-2.1 4.3-3.9 4.5V7.7h-2.8v7.8c-1.8-.4-4-2.5-5-5.8H3z"/></svg></span><span class="name">ВКонтакте</span><span class="arr">→</span></a>
+<a href="https://aiki.ru" target="_blank" rel="noreferrer"><span class="logo"><svg class="stroke" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9S14.5 18.4 12 21c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3Z"/></svg></span><span class="name">Официальный сайт<small>aiki.ru</small></span><span class="arr">→</span></a><a href="https://vk.ru/russian_aikido_federation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><path d="M3 7.7C3.1 14.4 6.5 18.4 12.5 18.4h.4v-3.8c2.1.2 3.7 1.7 4.3 3.8h3c-.8-2.9-2.9-4.5-4.2-5.1 1.3-.8 3.1-2.7 3.5-5.6h-2.7c-.5 2.3-2.1 4.3-3.9 4.5V7.7h-2.8v7.8c-1.8-.4-4-2.5-5-5.8H3z"/></svg></span><span class="name">ВКонтакте</span><span class="arr">→</span></a>
 <a href="https://max.ru/channel_Russian_Aikido_Federation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><text x="12" y="17.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="16" fill="#b8d63a">M</text></svg></span><span class="name">Макс</span><span class="arr">→</span></a>
 <a href="https://t.me/russianaikidofederation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><path d="M21 4 3.9 10.7c-1.1.4-1.1 1.1-.2 1.4l4.4 1.4 1.7 5.1c.2.6.1.8.8.8.5 0 .7-.2 1-.5l2.1-2 4.4 3.2c.8.5 1.4.3 1.6-.8L22.6 5c.3-1.3-.5-1.8-1.6-1zM9 13.2l9.2-5.8c.5-.3.9-.1.5.2l-7.5 6.8-.3 3.2L9 13.2z"/></svg></span><span class="name">Telegram</span><span class="arr">→</span></a>
 <a href="https://www.instagram.com/russian_aikido_federation" target="_blank" rel="noreferrer"><span class="logo"><svg class="stroke" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="#b8d63a" stroke="none"/></svg></span><span class="name">Instagram</span><span class="arr">→</span></a>
