@@ -28,7 +28,8 @@
     '.sm-burger[aria-expanded="true"] span:first-child{transform:translateY(3.5px) rotate(45deg)!important}' +
     '.sm-burger[aria-expanded="true"] span:last-child{transform:translateY(-3.5px) rotate(-45deg)!important}' +
     '.sm-mobile{display:none!important;overscroll-behavior:contain!important}' +
-    '@media(max-width:1180px){.sm-links{gap:18px!important}.sm-links a{font-size:10px!important;letter-spacing:.06em!important}}' +
+    '@media(max-width:1180px){.sm-links{gap:18px!important}.sm-links a{font-size:10px!important;letter-spacing:.06em!important}.sm-cta{font-size:13px!important;padding:10px 14px!important}}' +
+    '@media(max-width:960px){.sm-cta{font-size:12px!important;padding:9px 12px!important}}' +
     '@media(max-width:760px){.sm-links{display:none!important}.sm-cta{display:none!important}.sm-burger{display:flex!important}.sm-mobile:not([hidden]){display:grid!important;gap:0!important;background:#0d100e!important;border-top:1px solid #ffffff1f!important;box-shadow:0 18px 36px #0000008a!important;max-height:calc(100dvh - 82px)!important;overflow-y:auto!important;padding:25px 16px 30px!important;position:fixed!important;top:82px!important;right:0!important;left:0!important;z-index:9998!important}' +
     '.sm-mobile>p{color:#b8d63a!important;text-transform:uppercase!important;letter-spacing:1.5px!important;margin:0 0 13px!important;font-size:10px!important;font-weight:800!important;font-family:SmManrope,Manrope,Arial,sans-serif!important}' +
     '.sm-mobile>a{color:#e9e6dc!important;border-top:1px solid #ffffff22!important;justify-content:space-between!important;align-items:center!important;padding:14px 0!important;font-family:SmUnbounded,Unbounded,Manrope,Arial,sans-serif!important;font-size:22px!important;font-weight:500!important;text-decoration:none!important;display:flex!important}' +
@@ -61,12 +62,12 @@
     '<nav class="sm-nav" aria-label="Главная навигация">' +
     '<a class="sm-brand" href="/"><img src="/stork-symbol-full.jpg" alt=""/> <span>СПОРТ<br/>КАК ИСКУССТВО</span></a>' +
     '<div class="sm-links">' + linksHtml + '</div>' +
-    '<a class="sm-cta" href="https://t.me/vanzep">Связь с нами</a>' +
+    '<a class="sm-cta" href="https://t.me/vanzep">Связаться с нами</a>' +
     '<button class="sm-burger" type="button" aria-controls="sm-mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>' +
     '</nav>' +
     '<div class="sm-mobile" id="sm-mobile-nav" hidden>' +
     '<p>Навигация</p>' + mobileHtml +
-    '<a class="sm-mobile-cta" href="https://t.me/vanzep">Связь с нами</a>' +
+    '<a class="sm-mobile-cta" href="https://t.me/vanzep">Связаться с нами</a>' +
     '</div>';
 
   document.body.insertBefore(header, document.body.firstChild);
