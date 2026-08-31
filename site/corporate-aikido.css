@@ -32,3 +32,6 @@ h1,h2,h3{text-wrap:balance}
 .program-title>p{color:#525651;max-width:430px;margin:26px 0 0;font-size:17px;line-height:1.45}
 @media(max-width:1180px){.program-head{gap:36px}}
 @media(max-width:760px){.program-head{grid-template-columns:1fr;gap:32px}.program-photo img{aspect-ratio:0.8}}
+
+/* Заголовок программы — по центру высоты фото */
+.program-title{align-self:center}
