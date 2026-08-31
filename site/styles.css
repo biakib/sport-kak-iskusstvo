@@ -681,3 +681,6 @@ h1,h2,h3{text-wrap:balance}
 
 /* Герой: контент чуть выше (кламп-правила выше перекрыты) */
 .hero-copy{padding-top:clamp(64px,11vh,96px)!important}
+
+/* Секция «Сила — это умение слышать»: компактнее */
+.statement{padding:100px 0;gap:40px}
