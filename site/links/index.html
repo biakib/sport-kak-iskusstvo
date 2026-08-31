@@ -24,15 +24,12 @@ body{margin:0;background:#121812;color:#efece2;font-family:Manrope,Arial,sans-se
 a:focus-visible,button:focus-visible{outline:2px solid #b8d63a;outline-offset:3px;border-radius:6px}
 .wrap{max-width:640px;margin:0 auto;padding:24px 18px 44px}
 .head{text-align:center;margin-bottom:18px}
-.head .kicker{color:#b8d63a;text-transform:uppercase;letter-spacing:1.6px;font-size:10.5px;font-weight:800;margin:0 0 8px}
-.head h1{font-family:Unbounded,Manrope,Arial,sans-serif;font-size:17px;line-height:1.15;letter-spacing:-.01em;text-transform:uppercase;margin:0;text-wrap:balance}
-.head p{margin:8px auto 0;color:#b4bab0;font-size:13px;line-height:1.45;max-width:320px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.head p{margin:0 auto;color:#b4bab0;font-size:13px;line-height:1.45;max-width:320px}
 .cta{display:flex;gap:10px;margin:0 0 24px}
 .cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;padding:14px 12px;border-radius:12px;font-weight:800;font-size:13.5px;font-family:Manrope,Arial,sans-serif}
 .cta .primary{background:#b8d63a;color:#101410;box-shadow:0 10px 26px #b8d63a30}
 .cta .primary:hover{filter:brightness(1.06)}
-.cta .secondary{border:1px solid #333b33;color:#efece2}
-.cta .secondary:hover{border-color:#b8d63a}
 .group{margin-bottom:18px}
 .group>h2{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#b8d63a;margin:0 0 10px}
 .group>h2:after{content:"";flex:1;height:1px;background:#333b33}
@@ -72,8 +69,7 @@ window.addEventListener("resize",function(){if(window.innerWidth>760)close()});
 
 <div class="wrap">
 <header class="head">
-<p class="kicker">Все площадки проекта</p>
-<h1>Спорт как искусство</h1>
+<h1 class="sr-only">Спорт как искусство — все площадки</h1>
 <p>Все наши площадки. Подписывайтесь и следите за практикой</p>
 </header>
 
@@ -82,7 +78,6 @@ window.addEventListener("resize",function(){if(window.innerWidth>760)close()});
 <svg viewBox="0 0 24 24" style="width:19px;height:19px;fill:#141a14"><path d="M21 4 3.9 10.7c-1.1.4-1.1 1.1-.2 1.4l4.4 1.4 1.7 5.1c.2.6.1.8.8.8.5 0 .7-.2 1-.5l2.1-2 4.4 3.2c.8.5 1.4.3 1.6-.8L22.6 5c.3-1.3-.5-1.8-1.6-1zM9 13.2l9.2-5.8c.5-.3.9-.1.5.2l-7.5 6.8-.3 3.2L9 13.2z"/></svg>
 Связаться с нами
 </a>
-<a class="secondary" href="/">Основной сайт</a>
 </div>
 
 <section class="group">
@@ -98,7 +93,7 @@ window.addEventListener("resize",function(){if(window.innerWidth>760)close()});
 <section class="group">
 <h2>Федерация Айкидо России</h2>
 <div class="links">
-<a href="https://aiki.ru" target="_blank" rel="noreferrer"><span class="logo"><svg class="stroke" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9S14.5 18.4 12 21c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3Z"/></svg></span><span class="name">Официальный сайт<small>aiki.ru</small></span><span class="arr">→</span></a><a href="https://vk.ru/russian_aikido_federation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><path d="M3 7.7C3.1 14.4 6.5 18.4 12.5 18.4h.4v-3.8c2.1.2 3.7 1.7 4.3 3.8h3c-.8-2.9-2.9-4.5-4.2-5.1 1.3-.8 3.1-2.7 3.5-5.6h-2.7c-.5 2.3-2.1 4.3-3.9 4.5V7.7h-2.8v7.8c-1.8-.4-4-2.5-5-5.8H3z"/></svg></span><span class="name">ВКонтакте</span><span class="arr">→</span></a>
+<a href="https://aiki.ru" target="_blank" rel="noreferrer"><span class="logo"><svg class="stroke" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9S14.5 18.4 12 21c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3Z"/></svg></span><span class="name">Официальный сайт</span><span class="arr">→</span></a><a href="https://vk.ru/russian_aikido_federation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><path d="M3 7.7C3.1 14.4 6.5 18.4 12.5 18.4h.4v-3.8c2.1.2 3.7 1.7 4.3 3.8h3c-.8-2.9-2.9-4.5-4.2-5.1 1.3-.8 3.1-2.7 3.5-5.6h-2.7c-.5 2.3-2.1 4.3-3.9 4.5V7.7h-2.8v7.8c-1.8-.4-4-2.5-5-5.8H3z"/></svg></span><span class="name">ВКонтакте</span><span class="arr">→</span></a>
 <a href="https://max.ru/channel_Russian_Aikido_Federation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><text x="12" y="17.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="16" fill="#b8d63a">M</text></svg></span><span class="name">Макс</span><span class="arr">→</span></a>
 <a href="https://t.me/russianaikidofederation" target="_blank" rel="noreferrer"><span class="logo"><svg viewBox="0 0 24 24"><path d="M21 4 3.9 10.7c-1.1.4-1.1 1.1-.2 1.4l4.4 1.4 1.7 5.1c.2.6.1.8.8.8.5 0 .7-.2 1-.5l2.1-2 4.4 3.2c.8.5 1.4.3 1.6-.8L22.6 5c.3-1.3-.5-1.8-1.6-1zM9 13.2l9.2-5.8c.5-.3.9-.1.5.2l-7.5 6.8-.3 3.2L9 13.2z"/></svg></span><span class="name">Telegram</span><span class="arr">→</span></a>
 <a href="https://www.instagram.com/russian_aikido_federation" target="_blank" rel="noreferrer"><span class="logo"><svg class="stroke" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="#b8d63a" stroke="none"/></svg></span><span class="name">Instagram</span><span class="arr">→</span></a>
