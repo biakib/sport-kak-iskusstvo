@@ -62,12 +62,12 @@
     '<nav class="sm-nav" aria-label="Главная навигация">' +
     '<a class="sm-brand" href="/"><img src="/stork-symbol-full.jpg" alt=""/> <span>СПОРТ<br/>КАК ИСКУССТВО</span></a>' +
     '<div class="sm-links">' + linksHtml + '</div>' +
-    '<a class="sm-cta" href="https://t.me/vanzep">Связаться с нами</a>' +
+    '<a class="sm-cta" href="https://t.me/sport_us_art">Связаться с нами</a>' +
     '<button class="sm-burger" type="button" aria-controls="sm-mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>' +
     '</nav>' +
     '<div class="sm-mobile" id="sm-mobile-nav" hidden>' +
     '<p>Навигация</p>' + mobileHtml +
-    '<a class="sm-mobile-cta" href="https://t.me/vanzep">Связаться с нами</a>' +
+    '<a class="sm-mobile-cta" href="https://t.me/sport_us_art">Связаться с нами</a>' +
     '</div>';
 
   document.body.insertBefore(header, document.body.firstChild);
