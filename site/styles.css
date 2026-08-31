@@ -684,3 +684,14 @@ h1,h2,h3{text-wrap:balance}
 
 /* Секция «Сила — это умение слышать»: компактнее */
 .statement{padding:100px 0;gap:40px}
+/* Запись на тренировку */
+.hero-actions{align-items:center;display:flex;flex-wrap:wrap;gap:12px}
+.hero-actions .button{margin-top:20px}
+.button.ghost{background:transparent;border:1px solid #ffffff42;color:var(--paper)}
+.button.ghost:hover{border-color:var(--lime);color:var(--lime)}
+.button.ghost .arrow-icon{color:var(--pink)}
+.signup{padding:110px 0}
+.signup-inner{align-items:flex-start;display:flex;flex-direction:column}
+.signup h2{letter-spacing:-.06em;margin:0;font-size:clamp(44px,6vw,80px);line-height:.91}
+.signup-inner>p:not(.eyebrow){color:var(--muted);font-size:18px;line-height:1.45;margin:22px 0 30px;max-width:560px}
+@media(max-width:560px){.hero-actions .button{width:100%}.signup{padding:80px 0}}
