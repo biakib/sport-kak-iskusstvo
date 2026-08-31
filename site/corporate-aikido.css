@@ -25,8 +25,10 @@ h1,h2,h3{text-wrap:balance}
 .formats .kicker{color:#c22852}.contact .kicker{color:#8f1f44}
 
 /* === Программа: фото-карточка слева, карточки по тексту === */
-.program-wrap{display:grid;grid-template-columns:340px 1fr;gap:40px;align-items:start}
+.program-head{grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:end;margin-bottom:45px;display:grid}
+.program-left .kicker{display:block;margin:0 0 22px}
 .program-photo{margin:0;border-radius:26px;overflow:hidden;position:relative}
-.program-photo img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:0.72}
-@media(max-width:1180px){.program-wrap{grid-template-columns:300px 1fr;gap:28px}}
-@media(max-width:900px){.program-wrap{grid-template-columns:1fr;gap:30px}.program-photo{max-width:420px}}
+.program-photo img{width:100%;display:block;aspect-ratio:0.75;object-fit:cover}
+.program-title>p{color:#525651;max-width:430px;margin:26px 0 0;font-size:17px;line-height:1.45}
+@media(max-width:1180px){.program-head{gap:36px}}
+@media(max-width:760px){.program-head{grid-template-columns:1fr;gap:32px}.program-photo img{aspect-ratio:0.8}}
