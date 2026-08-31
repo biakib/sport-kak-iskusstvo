@@ -48,3 +48,9 @@ a:hover .sh-arrow{transform:translate(2px,-2px)}
 .sh-mobile-cta{color:#101410!important;background:var(--sh-lime,#b8d63a);border-radius:999px;justify-content:center;align-items:center;gap:10px;margin-top:15px;padding:14px 18px;font-size:13px!important;font-weight:800!important;text-decoration:none;display:flex}
 .sh-mobile-cta .sh-arrow{color:var(--sh-pink,#b83d63)}
 }
+
+@media (prefers-reduced-motion: reduce){
+  .site-links a,.site-cta,.sh-arrow,a:hover .sh-arrow{transition:none!important}
+  .site-links a:after{transition:none!important}
+  a:hover .sh-arrow{transform:none!important}
+}
