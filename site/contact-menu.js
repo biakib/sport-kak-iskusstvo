@@ -5,10 +5,9 @@
     { name: 'Telegram', desc: 'Быстрый ответ в мессенджере', goal: 'ch_telegram',
       href: 'https://t.me/sport_us_art', external: true,
       icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 4 3.9 10.7c-1.1.4-1.1 1.1-.2 1.4l4.4 1.4 1.7 5.1c.2.6.1.8.8.8.5 0 .7-.2 1-.5l2.1-2 4.4 3.2c.8.5 1.4.3 1.6-.8L22.6 5c.3-1.3-.5-1.8-1.6-1zM9 13.2l9.2-5.8c.5-.3.9-.1.5.2l-7.5 6.8-.3 3.2L9 13.2z"/></svg>' },
-    /* Когда появится ссылка Max — раскомментировать и вписать:
     { name: 'Max', desc: 'Мессенджер MAX', goal: 'ch_max',
-      href: 'https://max.ru/...', external: true,
-      icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><text x="12" y="17.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="16">M</text></svg>' }, */
+      href: 'https://max.ru/u/f9LHodD0cOL-Pymkp-QZsqorJIwgJDLQhTa_FSnJmyNq6L3uGOlAmyFiP3k', external: true,
+      icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><text x="12" y="17.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="16">M</text></svg>' },
     { name: 'ВКонтакте', desc: 'Написать Ивану', goal: 'ch_vk',
       href: 'https://vk.me/vanzep', external: true,
       icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 7.7C3.1 14.4 6.5 18.4 12.5 18.4h.4v-3.8c2.1.2 3.7 1.7 4.3 3.8h3c-.8-2.9-2.9-4.5-4.2-5.1 1.3-.8 3.1-2.7 3.5-5.6h-2.7c-.5 2.3-2.1 4.3-3.9 4.5V7.7h-2.8v7.8c-1.8-.4-4-2.5-5-5.8H3z"/></svg>' },
