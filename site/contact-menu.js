@@ -35,7 +35,7 @@
     '.cm-opt small{display:block;color:#b4bab0;font-size:12px;margin-top:2px}' +
     '.cm-opt .cm-arr{margin-left:auto;color:#c94d72;font-weight:800;font-style:normal}' +
     '.cm-x{position:absolute;top:10px;right:12px;background:none;border:0;color:#b4bab0;font-size:22px;line-height:1;cursor:pointer;padding:6px}' +
-    '.cm-menu{position:relative}' +
+    '.cm-menu{position:relative;outline:none}' +
     '.cm-overlay[hidden]{display:none}' +
     '@media (prefers-reduced-motion: reduce){.cm-menu{transition:none;transform:none;opacity:1}}';
 
@@ -45,7 +45,7 @@
     overlay = document.createElement('div');
     overlay.className = 'cm-overlay';
     overlay.hidden = true;
-    var html = '<div class="cm-menu" role="dialog" aria-modal="true" aria-label="Связаться с нами">' +
+    var html = '<div class="cm-menu" tabindex="-1" role="dialog" aria-modal="true" aria-label="Связаться с нами">' +
       '<button class="cm-x" type="button" aria-label="Закрыть">×</button>' +
       '<p class="cm-title">Связаться с нами</p>' +
       '<p class="cm-sub">Выберите удобный способ — ответим быстро</p>';
@@ -84,8 +84,8 @@
     }
     overlay.hidden = false;
     requestAnimationFrame(function () { overlay.classList.add('cm-open'); });
-    var first = overlay.querySelector('.cm-opt');
-    if (first) setTimeout(function () { first.focus(); }, 60);
+    var menu = overlay.querySelector('.cm-menu');
+    if (menu) setTimeout(function () { menu.focus(); }, 60);
     document.addEventListener('keydown', trapTab, true);
   }
 
