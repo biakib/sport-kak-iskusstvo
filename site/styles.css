@@ -698,8 +698,3 @@ h1,h2,h3{text-wrap:balance}
 /* Тег «для кого» на карточке направления */
 .format-card .card-tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;padding:5px 11px;border-radius:999px;background:#0e130e12;border:1px solid #0e130e2b;margin-bottom:13px}
 
-/* Альтернативные каналы связи у кнопок */
-.alt-row{align-items:center;display:flex;gap:9px;margin-top:14px;color:var(--muted);font-size:12.5px}
-.alt-row a{border:1px solid #ffffff30;border-radius:50%;color:var(--paper);display:grid;place-items:center;width:36px;height:36px;transition:border-color .18s,color .18s}
-.alt-row a:hover{border-color:var(--lime);color:var(--lime)}
-.alt-row svg{height:16px;width:16px}

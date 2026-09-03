@@ -42,8 +42,3 @@ h1,h2,h3{text-wrap:balance}
 
 .applications .kicker{color:#c22852}
 
-/* Альтернативные каналы связи */
-.alt-row{align-items:center;display:flex;gap:9px;margin:16px 0 0;color:var(--muted);font-size:12.5px}
-.alt-row a{border:1px solid #ffffff30;border-radius:50%;color:var(--paper);display:grid;place-items:center;width:36px;height:36px;transition:border-color .18s,color .18s}
-.alt-row a:hover{border-color:var(--lime);color:var(--lime)}
-.alt-row svg{height:16px;width:16px}
