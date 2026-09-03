@@ -43,3 +43,9 @@ h1,h2,h3{text-wrap:balance}
 
 
 .audience .kicker,.contact-band .kicker{color:#8f1f44}
+
+/* Альтернативные каналы связи (лаймовый фон) */
+.alt-row{align-items:center;display:flex;gap:9px;margin:16px 0 0;color:#141a14a6;font-size:12.5px}
+.alt-row a{border:1px solid #141a1433;border-radius:50%;color:#141a14;display:grid;place-items:center;width:36px;height:36px;transition:border-color .18s,color .18s}
+.alt-row a:hover{border-color:var(--pink);color:var(--pink)}
+.alt-row svg{height:16px;width:16px}

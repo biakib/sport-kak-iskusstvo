@@ -15,7 +15,8 @@
       else if (a.closest && a.closest('.hero-actions')) goal('zapis_hero');
       else if (a.classList.contains('contact-button')) goal('cta_direction');
       else goal('cta_links');
-    } else if (h.indexOf('tel:') === 0) goal('tel');
+    } else if (h.indexOf('vk.ru/egorovaiki') !== -1) goal('vk_contact');
+    else if (h.indexOf('tel:') === 0) goal('tel');
     else if (h.indexOf('mailto:') === 0) goal('mail');
     else if (h.indexOf('gymnastics.html') !== -1) goal('to_gymnastics');
     else if (h.indexOf('neuro.html') !== -1) goal('to_neuro');
