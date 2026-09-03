@@ -687,8 +687,8 @@ h1,h2,h3{text-wrap:balance}
 /* Запись на тренировку */
 .hero-actions{align-items:center;display:flex;flex-wrap:wrap;gap:12px}
 .hero-actions .button{margin-top:20px}
-.button.ghost{background:#b8d63a;border:1px solid #b8d63a;color:#101410}
-.button.ghost:hover{filter:brightness(1.06)}
+.button.ghost{background:#efece2;border:1px solid #efece2;color:#101410}
+.button.ghost:hover{filter:brightness(1.05)}
 .button.ghost .arrow-icon{color:var(--pink)}
 .signup{padding:110px 0}
 .signup-inner{align-items:flex-start;display:flex;flex-direction:column}
