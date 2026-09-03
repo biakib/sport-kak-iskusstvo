@@ -2,19 +2,19 @@
    Каналы задаются здесь — добавление Max = одна строка в CHANNELS. */
 (function () {
   var CHANNELS = [
-    { name: 'Telegram', desc: 'Быстрый ответ в мессенджере', goal: 'ch_telegram',
+    { name: 'Telegram', color: '#229ED9', desc: 'Быстрый ответ в мессенджере', goal: 'ch_telegram',
       href: 'https://t.me/sport_us_art', external: true,
       icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 4 3.9 10.7c-1.1.4-1.1 1.1-.2 1.4l4.4 1.4 1.7 5.1c.2.6.1.8.8.8.5 0 .7-.2 1-.5l2.1-2 4.4 3.2c.8.5 1.4.3 1.6-.8L22.6 5c.3-1.3-.5-1.8-1.6-1zM9 13.2l9.2-5.8c.5-.3.9-.1.5.2l-7.5 6.8-.3 3.2L9 13.2z"/></svg>' },
-    { name: 'Max', desc: 'Мессенджер MAX', goal: 'ch_max',
+    { name: 'Max', color: '#7B5CFA', desc: 'Мессенджер MAX', goal: 'ch_max',
       href: 'https://max.ru/u/f9LHodD0cOL-Pymkp-QZsqorJIwgJDLQhTa_FSnJmyNq6L3uGOlAmyFiP3k', external: true,
       icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><text x="12" y="17.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="16">M</text></svg>' },
-    { name: 'ВКонтакте', desc: 'Написать Ивану', goal: 'ch_vk',
+    { name: 'ВКонтакте', color: '#0077FF', desc: 'Написать Ивану', goal: 'ch_vk',
       href: 'https://vk.me/vanzep', external: true,
       icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 7.7C3.1 14.4 6.5 18.4 12.5 18.4h.4v-3.8c2.1.2 3.7 1.7 4.3 3.8h3c-.8-2.9-2.9-4.5-4.2-5.1 1.3-.8 3.1-2.7 3.5-5.6h-2.7c-.5 2.3-2.1 4.3-3.9 4.5V7.7h-2.8v7.8c-1.8-.4-4-2.5-5-5.8H3z"/></svg>' },
-    { name: 'Позвонить', desc: '+7 916 465-11-96', goal: 'ch_phone',
+    { name: 'Позвонить', color: '#34C759', desc: '+7 916 465-11-96', goal: 'ch_phone',
       href: 'tel:+79164651196',
       icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.21c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>' },
-    { name: 'Почта', desc: 'vanzep@yandex.ru', goal: 'ch_mail',
+    { name: 'Почта', color: '#efece2', fg: '#101410', desc: 'vanzep@yandex.ru', goal: 'ch_mail',
       href: 'mailto:vanzep@yandex.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0',
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>' }
   ];
@@ -27,13 +27,13 @@
     '.cm-overlay.cm-open .cm-menu{transform:translateY(0);opacity:1}' +
     '.cm-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.4px;color:#b8d63a;margin:0 0 6px;text-align:center}' +
     '.cm-sub{color:#b4bab0;font-size:13px;line-height:1.4;margin:0 0 14px;text-align:center}' +
-    '.cm-opt{display:flex;align-items:center;gap:13px;text-decoration:none;color:#101410;border:1px solid #b8d63a;border-radius:14px;padding:12px 14px;margin-top:8px;background:#b8d63a;transition:filter .16s ease}' +
-    '.cm-opt:hover,.cm-opt:focus-visible{filter:brightness(1.07)}' +
-    '.cm-opt .cm-ico{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#10141014;border:1px solid #10141033;color:#101410}' +
+    '.cm-opt{display:flex;align-items:center;gap:13px;text-decoration:none;color:#efece2;border:1px solid #ffffff1f;border-radius:14px;padding:12px 14px;margin-top:8px;background:#1a211a;transition:border-color .16s ease,transform .16s ease}' +
+    '.cm-opt:hover,.cm-opt:focus-visible{border-color:#b8d63a;transform:translateY(-1px)}' +
+    '.cm-opt .cm-ico{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff}' +
     '.cm-opt .cm-ico svg{width:19px;height:19px}' +
     '.cm-opt b{display:block;font-size:14.5px;font-weight:800}' +
-    '.cm-opt small{display:block;color:#101410b3;font-size:12px;margin-top:2px}' +
-    '.cm-opt .cm-arr{margin-left:auto;color:#101410;font-weight:800;font-style:normal}' +
+    '.cm-opt small{display:block;color:#b4bab0;font-size:12px;margin-top:2px}' +
+    '.cm-opt .cm-arr{margin-left:auto;color:#c94d72;font-weight:800;font-style:normal}' +
     '.cm-x{position:absolute;top:10px;right:12px;background:none;border:0;color:#b4bab0;font-size:22px;line-height:1;cursor:pointer;padding:6px}' +
     '.cm-menu{position:relative}' +
     '.cm-overlay[hidden]{display:none}' +
@@ -51,7 +51,7 @@
       '<p class="cm-sub">Выберите удобный способ — ответим быстро</p>';
     CHANNELS.forEach(function (c) {
       html += '<a class="cm-opt" href="' + c.href + '"' + (c.external ? ' target="_blank" rel="noreferrer"' : '') + ' data-goal="' + c.goal + '">' +
-        '<span class="cm-ico">' + c.icon + '</span>' +
+        '<span class="cm-ico" style="background:' + c.color + ';' + (c.fg ? 'color:' + c.fg + ';' : '') + '">' + c.icon + '</span>' +
         '<span><b>' + c.name + '</b><small>' + c.desc + '</small></span>' +
         '<i class="cm-arr">→</i></a>';
     });
