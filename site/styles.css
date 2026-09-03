@@ -96,7 +96,7 @@ em{color:var(--lime);font-style:normal}
 .hero-copy h1{letter-spacing:-.075em;text-transform:uppercase;width:560px;margin-bottom:28px;font-size:clamp(54px,7.2vw,108px);line-height:.82}
 .hero-copy>p:not(.eyebrow){color:#d5d9d2;max-width:385px;font-size:20px;line-height:1.36}
 .button{border-radius:999px;justify-content:center;align-items:center;gap:20px;padding:16px 21px;font-size:14px;font-weight:800;text-decoration:none;display:inline-flex}
-.blue{background:var(--lime);color:#0b0e0b;margin-top:20px}
+.blue{background:#c9f24c;color:#0b0e0b;margin-top:20px;box-shadow:0 10px 28px #b8d63a52}
 .blue span{color:var(--pink);font-size:18px}
 .hero-note{z-index:3;text-transform:uppercase;letter-spacing:1.4px;width:205px;font-size:11px;font-weight:800;line-height:1.42;position:absolute;top:150px;right:0}
 .hero-mark{z-index:3;text-transform:uppercase;letter-spacing:1.1px;align-items:center;gap:10px;font-size:10px;font-weight:700;line-height:1.15;display:flex;position:absolute;bottom:82px;right:5%}
@@ -687,8 +687,8 @@ h1,h2,h3{text-wrap:balance}
 /* Запись на тренировку */
 .hero-actions{align-items:center;display:flex;flex-wrap:wrap;gap:12px}
 .hero-actions .button{margin-top:20px}
-.button.ghost{background:transparent;border:1px solid #ffffff42;color:var(--paper)}
-.button.ghost:hover{border-color:var(--lime);color:var(--lime)}
+.button.ghost{background:#b8d63a12;border:1px solid #ffffff5c;color:#fff}
+.button.ghost:hover{border-color:var(--lime);color:#c9f24c;background:#b8d63a1f}
 .button.ghost .arrow-icon{color:var(--pink)}
 .signup{padding:110px 0}
 .signup-inner{align-items:flex-start;display:flex;flex-direction:column}
