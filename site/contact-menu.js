@@ -106,7 +106,7 @@
   }
 
   function init() {
-    var SELECTOR = '.sm-cta,.sm-mobile-cta,.hero-actions .ghost,.contact-button,.cta .primary,#signup .button';
+    var SELECTOR = '.sm-cta,.sm-mobile-cta,.hero-actions .ghost,.contact-button,.cta .primary,#signup .button,.cm-open';
     document.querySelectorAll(SELECTOR).forEach(function (el) {
       el.addEventListener('click', function (e) {
         e.preventDefault();
