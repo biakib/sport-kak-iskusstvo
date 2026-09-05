@@ -2,13 +2,13 @@
    Стили задаются инлайн через JS — их не может перекрыть ни один CSS страницы. */
 (function () {
   var FONT_FACES =
-    '@font-face{font-family:SmUnbounded;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}' +
-    '@font-face{font-family:SmUnbounded;font-weight:500;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}' +
-    '@font-face{font-family:SmUnbounded;font-weight:700;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}' +
-    '@font-face{font-family:SmUnbounded;font-weight:800;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}' +
-    '@font-face{font-family:SmManrope;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}' +
-    '@font-face{font-family:SmManrope;font-weight:700;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}' +
-    '@font-face{font-family:SmManrope;font-weight:800;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}';
+    '@font-face{font-family:SmUnbounded;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.woff2)}' +
+    '@font-face{font-family:SmUnbounded;font-weight:500;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.woff2)}' +
+    '@font-face{font-family:SmUnbounded;font-weight:700;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.woff2)}' +
+    '@font-face{font-family:SmUnbounded;font-weight:800;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.woff2)}' +
+    '@font-face{font-family:SmManrope;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.woff2)}' +
+    '@font-face{font-family:SmManrope;font-weight:700;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.woff2)}' +
+    '@font-face{font-family:SmManrope;font-weight:800;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.woff2)}';
 
   var CSS =
     '.sm-header{position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:9999!important;background:linear-gradient(#040605f0,#04060594)!important;-webkit-backdrop-filter:blur(16px)!important;backdrop-filter:blur(16px)!important}' +

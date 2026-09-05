@@ -1,6 +1,9 @@
-@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
-@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf);font-weight:800}
-@font-face{font-family:Unbounded;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf);font-weight:500}
+@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.woff2) format('woff2'),
+url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.woff2) format('woff2'),
+url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf);font-weight:800}
+@font-face{font-family:Unbounded;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.woff2) format('woff2'),
+url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf);font-weight:500}
 :root{--bg:#141a14;--black:#090b0a;--paper:#efece2;--lime:#b8d63a;--pink:#b83d63;--muted:#b8bdb3;--line:#3d453d}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;color-scheme:dark}

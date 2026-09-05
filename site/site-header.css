@@ -1,21 +1,35 @@
 
 /* Собственные семейства шапки: файлы идентичны главной, имя изолировано */
-@font-face{font-family:UnboundedHdr;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
-@font-face{font-family:UnboundedHdr;font-weight:500;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
-@font-face{font-family:UnboundedHdr;font-weight:700;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
-@font-face{font-family:UnboundedHdr;font-weight:800;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
-@font-face{font-family:ManropeHdr;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
-@font-face{font-family:ManropeHdr;font-weight:700;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
-@font-face{font-family:ManropeHdr;font-weight:800;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
+@font-face{font-family:UnboundedHdr;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
+@font-face{font-family:UnboundedHdr;font-weight:500;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
+@font-face{font-family:UnboundedHdr;font-weight:700;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
+@font-face{font-family:UnboundedHdr;font-weight:800;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
+@font-face{font-family:ManropeHdr;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.woff2) format('woff2'),
+url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:ManropeHdr;font-weight:700;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.woff2) format('woff2'),
+url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
+@font-face{font-family:ManropeHdr;font-weight:800;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.woff2) format('woff2'),
+url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
 
 /* Шрифты — те же файлы и веса, что на главной странице */
-@font-face{font-family:Unbounded;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:500;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:700;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
-@font-face{font-family:Unbounded;font-weight:800;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
-@font-face{font-family:Manrope;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
-@font-face{font-family:Manrope;font-weight:700;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
-@font-face{font-family:Manrope;font-weight:800;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
+@font-face{font-family:Unbounded;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:500;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:700;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
+@font-face{font-family:Unbounded;font-weight:800;font-display:swap;src:url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.woff2) format('woff2'),
+url(/fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
+@font-face{font-family:Manrope;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.woff2) format('woff2'),
+url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:700;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.woff2) format('woff2'),
+url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:800;font-display:swap;src:url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.woff2) format('woff2'),
+url(/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
 /* Единая шапка сайта — подключается на всех страницах */
 :root{--sh-lime:#b8d63a;--sh-pink:#b83d63;--sh-paper:#e9e6dc}
 .site-header{z-index:40;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);background:linear-gradient(#040605f0,#04060594);position:fixed;top:0;left:0;right:0}

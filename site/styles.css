@@ -60,15 +60,24 @@ button,input:where([type=button],[type=reset],[type=submit]){appearance:button}
 .table{display:table}
 .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 }
-@font-face{font-family:Manrope;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
-@font-face{font-family:Manrope;font-weight:500;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf)}
-@font-face{font-family:Manrope;font-weight:600;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf)}
-@font-face{font-family:Manrope;font-weight:700;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
-@font-face{font-family:Manrope;font-weight:800;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
-@font-face{font-family:Unbounded;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:500;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
-@font-face{font-family:Unbounded;font-weight:600;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
-@font-face{font-family:Unbounded;font-weight:700;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
+@font-face{font-family:Manrope;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.woff2) format('woff2'),
+url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:500;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.woff2) format('woff2'),
+url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf)}
+@font-face{font-family:Manrope;font-weight:600;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.woff2) format('woff2'),
+url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:700;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.woff2) format('woff2'),
+url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf)}
+@font-face{font-family:Manrope;font-weight:800;font-display:block;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.woff2) format('woff2'),
+url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf)}
+@font-face{font-family:Unbounded;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.woff2) format('woff2'),
+url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:500;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.woff2) format('woff2'),
+url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf)}
+@font-face{font-family:Unbounded;font-weight:600;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.woff2) format('woff2'),
+url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG68b2040.ttf)}
+@font-face{font-family:Unbounded;font-weight:700;font-display:block;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.woff2) format('woff2'),
+url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6__2040.ttf)}
 :root{--bg:#141a14;--black:#0e130e;--paper:#efece2;--lime:#b8d63a;--pink:#b83d63;--muted:#b8bdb3;--line:#394039}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
