@@ -1,0 +1,156 @@
+@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf)}
+@font-face{font-family:Manrope;src:url(./fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf);font-weight:800}
+@font-face{font-family:Unbounded;src:url(./fonts/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6yrx040.ttf);font-weight:500}
+:root{--bg:#141a14;--black:#090b0a;--paper:#efece2;--lime:#b8d63a;--pink:#b83d63;--muted:#b8bdb3;--line:#3d453d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:dark}
+body{background:var(--bg);color:var(--paper);margin:0;font-family:Manrope,Arial,sans-serif}
+.shell{width:min(1160px,calc(100% - 48px));margin:auto}
+a{color:inherit}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{letter-spacing:-.06em;text-wrap:balance}
+.kicker{text-transform:uppercase;letter-spacing:1.5px;color:var(--lime);margin:0 0 18px;font-size:12px;font-weight:800}
+.kicker.pink{color:var(--pink)}
+.lime-button,.contact-button{border-radius:999px;padding:12px 16px;font-size:13px;font-weight:800;text-decoration:none;display:inline-block}
+.lime-button{background:var(--lime);color:var(--black);margin-top:28px}
+.contact-button span,.lime-button span{color:var(--pink);font-size:18px;margin-left:7px}
+
+/* Герой */
+.ak-hero{background:var(--black);min-height:660px;position:relative;overflow:hidden}
+.ak-hero:after{content:"";opacity:.6;background:radial-gradient(circle at 73% 58%,#b8d63a1f,#0000 27%),linear-gradient(90deg,#090b0a 0%,#090b0af5 46%,#090b0a30 100%);pointer-events:none;position:absolute;inset:0}
+.ak-hero-grid{z-index:1;grid-template-columns:1.05fr .95fr;gap:64px;min-height:660px;align-items:center;display:grid;position:relative}
+.ak-hero-copy{z-index:2;position:relative}
+.ak-hero h1{margin:0 0 25px;font-size:clamp(48px,6.4vw,88px);line-height:.88}
+.ak-hero h1 em,h2 em{color:var(--lime);font-style:normal}
+.lead{color:#d5d9d2;max-width:510px;margin:0;font-size:19px;line-height:1.45}
+.hero-photo{z-index:2;height:520px;margin:0;position:relative;overflow:hidden;border-radius:26px}
+.hero-photo:before{content:"";z-index:1;background:linear-gradient(90deg,#090b0a9c,#0000 52%),linear-gradient(0deg,#090b0a70,#0000 50%);position:absolute;inset:0}
+.hero-photo img{object-fit:cover;width:100%;height:100%;display:block}
+.hero-photo figcaption{z-index:2;text-transform:uppercase;letter-spacing:1.4px;color:var(--lime);font-size:10px;font-weight:800;position:absolute;right:14px;bottom:14px;background:#090b0ad9;padding:9px 14px;border-radius:999px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.hero-orbit{z-index:1;border:1px solid #b8d63a66;border-radius:50%;width:520px;height:520px;position:absolute}
+.orbit-a{top:-250px;right:-120px}
+.orbit-b{border-color:#b83d6399;width:180px;height:180px;bottom:35px;left:41%}
+
+/* О школе */
+.ak-intro{padding:120px 0}
+.ak-intro-grid{grid-template-columns:1.12fr .88fr;gap:80px;display:grid}
+.ak-intro h2{margin:0;font-size:clamp(36px,4.8vw,68px);line-height:.93}
+.ak-intro-grid>div{color:var(--muted);font-size:18px;line-height:1.45}
+.ak-intro-grid>div p{margin:0 0 20px}
+
+/* Плашки «что даёт» */
+.ak-benefits{background:#1d271d;padding:105px 0}
+.section-head{justify-content:space-between;gap:50px;align-items:end;margin-bottom:42px;display:flex}
+.section-head>p:last-child{color:var(--muted);max-width:430px;margin:0;font-size:16px;line-height:1.4}
+.benefit-grid{grid-template-columns:repeat(3,1fr);gap:10px;display:grid}
+.benefit-grid article{background:var(--lime);color:#141a14;min-height:0;padding:22px 24px;border-radius:18px}
+.benefit-grid h3{color:#141a14;margin:0 0 10px;font-size:30px}
+.benefit-grid p{color:#141a14d9;margin:0;font-size:14px;line-height:1.4}
+
+/* Для детей */
+.ak-kids{grid-template-columns:.9fr 1.1fr;gap:82px;align-items:center;padding:120px 0;display:grid}
+.wide-photo{height:515px;margin:0;position:relative}
+.wide-photo img{object-fit:cover;filter:contrast(1.03) saturate(.84);width:100%;height:100%;position:relative;z-index:1;border-radius:26px}
+.wide-photo:after{content:"";border:1px solid #b8d63a66;position:absolute;inset:16px -16px -16px 16px;border-radius:26px}
+.ak-kids h2{margin:0;font-size:clamp(36px,4.8vw,68px);line-height:.93}
+.ak-kids ul{gap:11px;margin:28px 0;padding:0;list-style:none;display:grid}
+.ak-kids li{color:#d4d9d2;padding-left:18px;font-size:16px;line-height:1.35;position:relative}
+.ak-kids li:before{content:"•";color:var(--lime);position:absolute;left:0}
+.note{color:var(--muted);border-top:1px solid var(--line);padding-top:18px;font-size:16px;line-height:1.4}
+
+/* Сравнение */
+.ak-vs{background:#1d271d;padding:105px 0}
+.ak-vs .section-head h2,.ak-vs h2{margin:0;font-size:clamp(34px,4.4vw,60px);line-height:.93}
+.vs-table{width:100%;border-collapse:collapse;margin-top:8px}
+.vs-table th,.vs-table td{text-align:left;vertical-align:top;padding:16px 18px;border-bottom:1px solid #ffffff24;font-size:14.5px;line-height:1.4}
+.vs-table thead th{font-family:Unbounded,Manrope,Arial,sans-serif;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--paper);border-bottom:2px solid var(--lime)}
+.vs-table th[scope=row]{color:var(--paper);font-weight:800;white-space:nowrap}
+.vs-table td{color:var(--muted)}
+.vs-table td:first-of-type{color:#d4d9d2}
+.vs-note{color:var(--muted);margin:26px 0 0;font-size:15px;line-height:1.45;border-left:3px solid var(--pink);padding-left:18px}
+
+/* Для взрослых */
+.ak-adults{background:var(--paper);color:#141a14;padding:110px 0}
+.ak-adults-grid{grid-template-columns:1.05fr .95fr;gap:80px;align-items:center;display:grid}
+.ak-adults .kicker{color:#8f1f44}
+.ak-adults h2{margin:0;font-size:clamp(36px,4.8vw,68px);line-height:.93}
+.ak-adults h2 em{color:#8f1f44}
+.ak-adults p:not(.kicker){max-width:520px;margin:28px 0 0;font-size:18px;line-height:1.45}
+.ak-adults ul{gap:11px;margin:28px 0 0;padding:0;list-style:none;display:grid}
+.ak-adults li{padding-left:18px;font-size:16px;line-height:1.35;position:relative}
+.ak-adults li:before{content:"•";color:#8f1f44;position:absolute;left:0}
+.ak-adults figure{height:450px;margin:0;overflow:hidden;border-radius:26px}
+.ak-adults figure img{object-fit:cover;width:100%;height:100%}
+
+/* Структура занятия */
+.ak-lesson{padding:115px 0}
+.ak-lesson-grid{grid-template-columns:.95fr 1.05fr;gap:84px;display:grid}
+.ak-lesson h2{margin:0;font-size:clamp(36px,4.8vw,68px);line-height:.93}
+.lesson-list{border-top:1px solid #ffffff3d}
+.lesson-list p{grid-template-columns:110px 1fr;gap:20px;border-bottom:1px solid #ffffff3d;margin:0;padding:17px 0;display:grid}
+.lesson-list b{color:var(--lime);font-size:13px}
+.lesson-list span{color:var(--muted);font-size:14px;line-height:1.35}
+.ak-lesson-copy{color:var(--muted);max-width:550px;margin:28px 0;font-size:18px;line-height:1.45}
+
+/* FAQ */
+.ak-faq{padding:110px 0}
+.ak-faq h2{margin:0;font-size:clamp(36px,4.8vw,68px);line-height:.93}
+.faq-list{border-top:1px solid var(--line);margin-top:44px}
+.faq-list details{border-bottom:1px solid var(--line);padding:22px 0}
+.faq-list summary{cursor:pointer;font-size:19px;font-weight:800;list-style:none;align-items:center;gap:20px;display:flex}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";color:var(--pink);flex:none;margin-left:auto;font-size:26px;font-weight:400}
+.faq-list details[open] summary:after{content:"\2013"}
+.faq-list details p{color:var(--muted);margin:14px 0 0;font-size:16px;line-height:1.5;max-width:720px}
+
+/* Контакты */
+.contact-band{background:var(--lime);color:#141414;padding:100px 0}
+.contact-band .kicker,.contact-band h2 em{color:var(--pink)}
+.contact-grid{grid-template-columns:1fr 1fr;gap:90px;display:grid}
+.contact-grid h2{margin:0;font-size:clamp(36px,4.8vw,68px);line-height:.93}
+.contact-grid>div:last-child>p:first-child{max-width:470px;margin:0 0 28px;font-size:18px;line-height:1.45}
+.contact-button{background:#efece2;color:#101410;border:2px solid #101410;margin-bottom:28px}
+.contact-details{border-top:1px solid #14141466;margin:0;padding-top:18px;font-size:14px;line-height:1.55}
+.contact-details a{text-decoration:none}
+footer{color:var(--muted);justify-content:space-between;padding:28px 0;font-size:13px;display:flex}
+footer a{color:var(--paper);text-decoration:none}
+
+/* Доступность */
+a:focus-visible,button:focus-visible{outline:2px solid #cbf23d;outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+body{touch-action:manipulation}
+
+@media(max-width:760px){
+.shell{width:min(100% - 32px,1160px)}
+.ak-hero,.ak-hero-grid{min-height:690px}
+.ak-hero-grid{grid-template-columns:1fr;padding-top:72px;padding-bottom:28px;gap:36px}
+.hero-photo{height:294px}
+.ak-hero:after{background:linear-gradient(0deg,#090b0a,#090b0a14 62%),radial-gradient(circle at 80% 68%,#b8d63a28,#0000 28%)}
+.orbit-a{width:310px;height:310px;top:310px;right:-180px}
+.orbit-b{left:-80px;bottom:45px}
+.ak-intro{padding:76px 0}
+.ak-intro-grid{grid-template-columns:1fr;gap:36px}
+.ak-intro-grid>div{font-size:16px}
+.ak-benefits{padding:75px 0}
+.section-head{display:block}
+.section-head>p:last-child{margin-top:20px}
+.benefit-grid{grid-template-columns:1fr}
+.ak-kids{grid-template-columns:1fr;gap:36px;padding:76px 0}
+.wide-photo{height:370px}
+.vs-wrap{overflow-x:auto;margin:0 -16px;padding:0 16px}
+.vs-table{min-width:560px}
+.ak-adults{padding:75px 0}
+.ak-adults-grid{grid-template-columns:1fr;gap:36px}
+.ak-adults figure{height:340px;order:-1}
+.ak-lesson{padding:76px 0}
+.ak-lesson-grid{grid-template-columns:1fr;gap:36px}
+.lesson-list p{grid-template-columns:84px 1fr;gap:12px}
+.ak-faq{padding:75px 0}
+.faq-list summary{font-size:16.5px}
+.contact-band{padding:75px 0}
+.contact-grid{grid-template-columns:1fr;gap:42px}
+footer{gap:16px;line-height:1.35;display:flex;flex-direction:column}
+h1{font-size:47px}
+.lead{font-size:16px}
+.ak-intro h2,.ak-kids h2,.ak-vs h2,.ak-adults h2,.ak-lesson h2,.contact-grid h2{font-size:40px}
+}
