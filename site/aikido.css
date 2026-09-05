@@ -52,6 +52,7 @@ h1,h2,h3{letter-spacing:-.06em;text-wrap:balance}
 .wide-photo{height:515px;margin:0;position:relative}
 .wide-photo img{object-fit:cover;filter:contrast(1.03) saturate(.84);width:100%;height:100%;position:relative;z-index:1;border-radius:26px}
 .wide-photo:after{content:"";border:1px solid #b8d63a66;position:absolute;inset:16px -16px -16px 16px;border-radius:26px}
+.photo-badge{position:absolute;z-index:2;right:14px;bottom:14px;background:#090b0ad9;color:var(--paper);font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:9px 14px;border-radius:999px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
 .ak-kids h2{margin:0;font-size:clamp(36px,4.8vw,68px);line-height:.93}
 .ak-kids ul{gap:11px;margin:28px 0;padding:0;list-style:none;display:grid}
 .ak-kids li{color:#d4d9d2;padding-left:18px;font-size:16px;line-height:1.35;position:relative}
@@ -75,7 +76,7 @@ h1,h2,h3{letter-spacing:-.06em;text-wrap:balance}
 .ak-adults ul{gap:11px;margin:28px 0 0;padding:0;list-style:none;display:grid}
 .ak-adults li{padding-left:18px;font-size:16px;line-height:1.35;position:relative}
 .ak-adults li:before{content:"•";color:#8f1f44;position:absolute;left:0}
-.ak-adults figure{height:450px;margin:0;overflow:hidden;border-radius:26px}
+.ak-adults figure{position:relative;height:450px;margin:0;overflow:hidden;border-radius:26px}
 .ak-adults figure img{object-fit:cover;width:100%;height:100%}
 
 /* Структура занятия */
