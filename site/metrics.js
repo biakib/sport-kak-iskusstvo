@@ -22,6 +22,7 @@
     else if (h.indexOf('gymnastics.html') !== -1) goal('to_gymnastics');
     else if (h.indexOf('neuro.html') !== -1) goal('to_neuro');
     else if (h.indexOf('corporate-aikido.html') !== -1) goal('to_corporate');
+    else if (h.indexOf('aikido.html') !== -1) goal('to_aikido');
     else if (h.indexOf('/links') !== -1) goal('to_links');
   }, true);
 })();
