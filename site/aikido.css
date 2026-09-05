@@ -178,3 +178,12 @@ h1{font-size:47px}
 .lead{font-size:16px}
 .ak-intro h2,.ak-kids h2,.ak-vs h2,.ak-adults h2,.ak-lesson h2,.contact-grid h2{font-size:40px}
 }
+
+/* Живые плашки: статьи и карточки */
+.ak-articles .lesson-list p{transition:background .2s ease,transform .2s ease;border-radius:12px}
+.ak-articles .lesson-list p:hover{background:rgba(20,26,20,.055);transform:translateX(6px)}
+.ak-articles .lesson-list a::after{content:" →";color:#8f1f44;opacity:0;margin-left:-8px;transition:opacity .2s ease,margin-left .2s ease}
+.ak-articles .lesson-list a:hover::after{opacity:1;margin-left:4px}
+.benefit-grid article,.vs-cards article{transition:transform .25s ease}
+.benefit-grid article:hover,.vs-cards article:hover{transform:translateY(-4px)}
+.lesson-list a:focus-visible,.more-grid a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}

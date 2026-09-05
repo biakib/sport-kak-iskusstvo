@@ -67,3 +67,13 @@ footer a{color:var(--paper);text-decoration:none}
 .more-grid{grid-template-columns:1fr}
 footer{gap:14px;line-height:1.35;flex-direction:column}
 }
+
+/* Живые карточки статей */
+.more-grid article{position:relative;transition:transform .25s ease,border-color .25s ease}
+.more-grid article:hover{transform:translateY(-5px);border-color:var(--lime)}
+.more-grid article a::after{content:"";position:absolute;inset:0;cursor:pointer}
+.more-grid article p{transition:color .2s ease}
+.more-grid article:hover p{color:#d4d9d2}
+.article-cta .cm-open{transition:transform .2s ease,box-shadow .2s ease}
+.article-cta .cm-open:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.more-grid a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}

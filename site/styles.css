@@ -707,3 +707,11 @@ h1,h2,h3{text-wrap:balance}
 /* Тег «для кого» на карточке направления */
 .format-card .card-tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;padding:6px 12px;border-radius:999px;background:#0e130e12;border:1px solid #0e130e2b;margin-bottom:18px}
 
+
+/* Живые карточки направлений: вся плашка кликабельна */
+.formats .format-card{position:relative;transition:transform .25s ease,box-shadow .25s ease}
+.formats .format-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(0,0,0,.32)}
+.formats .format-card>a::after{content:"";position:absolute;inset:0;border-radius:18px}
+.formats .format-card a b{display:inline-block;transition:transform .25s ease}
+.formats .format-card:hover a b{transform:translateX(5px)}
+.formats .format-card a:focus-visible,.format-card:focus-within{outline:2px solid var(--lime);outline-offset:3px}
