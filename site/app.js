@@ -106,7 +106,10 @@ function openBiography(mentor) {
 
 document.querySelectorAll(".mentor").forEach((button, index) => {
   button.type = "button";
-  button.addEventListener("click", () => openBiography(mentors[index]));
+  button.addEventListener("click", () => {
+    if (button.dataset.bioHref) { location.href = button.dataset.bioHref; return; }
+    openBiography(mentors[index]);
+  });
 });
 
 const motionPrinciples = {
