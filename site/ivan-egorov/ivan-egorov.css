@@ -79,6 +79,9 @@ footer.ie-footer a:hover{color:var(--lime)}
 
 @media(max-width:900px){
   .ie-hero-grid{grid-template-columns:1fr;gap:34px;padding:44px 0;min-height:0}
+  .ie-hero-grid>div{display:contents}
+  .ie-hero-grid .ie-hero-photo{order:2}
+  .ie-regalia{order:3}
   .ie-mentor-grid{grid-template-columns:1fr;gap:34px}
   .ie-hero-photo{height:340px}
   .ie-sec{padding:44px 0}
