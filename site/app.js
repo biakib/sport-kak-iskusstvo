@@ -106,10 +106,15 @@ function openBiography(mentor) {
 
 document.querySelectorAll(".mentor").forEach((button, index) => {
   button.type = "button";
-  button.addEventListener("click", () => {
-    if (button.dataset.bioHref) { location.href = button.dataset.bioHref; return; }
+  button.addEventListener("click", (e) => {
+    if (e.target.closest("a")) return;
     openBiography(mentors[index]);
   });
+  if (button.getAttribute("role") === "button") {
+    button.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openBiography(mentors[index]); }
+    });
+  }
 });
 
 const motionPrinciples = {
