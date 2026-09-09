@@ -214,11 +214,15 @@ footer a{color:var(--paper);text-decoration:none}
 .mentors-head .eyebrow{align-self:start}
 .mentors-head h2{letter-spacing:-.06em;margin:0;font-size:clamp(44px,6vw,80px);line-height:.91}
 .mentor-grid{grid-template-columns:repeat(4,1fr);gap:10px;display:grid}
-.mentor-bio-link{margin-top:10px;padding-top:0;color:var(--lime);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
-.mentor-bio-link:hover{text-decoration:underline}
-.mentor-bio-link .arrow-icon{transition:transform .2s}
-.mentor-bio-link:hover .arrow-icon{transform:translate(2px,-2px)}
-.mentor p{margin-bottom:0}
+/* ячейка наставника: карточка + слот под ней (у Ивана — лаймовая кнопка) */
+.mentor-cell{display:flex;flex-direction:column;gap:10px}
+.mentor-cell::after{content:"";min-height:44px}
+.mentor-cell .mentor{flex:1}
+.mentor-cell.has-bio::after{content:none}
+.mentor-bio-btn{flex:none;display:flex;justify-content:center;align-items:center;gap:8px;background:var(--lime);color:#141a14;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;padding:13px 16px;border-radius:12px;transition:filter .2s,transform .2s}
+.mentor-bio-btn:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.mentor-bio-btn .arrow-icon{transition:transform .2s}
+.mentor-bio-btn:hover .arrow-icon{transform:translate(2px,-2px)}
 .mentor{color:#fff;text-align:left;cursor:pointer;min-height:450px;font:inherit;background:#141a14;border:1px solid #38403a;border-radius:14px;grid-template-rows:57% 43%;padding:0;transition:transform .22s,border-color .22s;display:grid;overflow:hidden}
 .mentor:hover{border-color:var(--lime);transform:translateY(-5px)}
 .mentor-photo{background:#252b26;display:block;overflow:hidden}
@@ -344,6 +348,9 @@ footer a{color:var(--paper);text-decoration:none}
 .format-card h3{font-size:30px}
 .mentor-grid{grid-template-columns:1fr}
 .mentor{min-height:360px}
+.mentor-cell::after{min-height:0}
+.mentor-cell:not(.has-bio){display:contents}
+.mentor-cell.has-bio{margin-top:10px}
 .mentors-head h2{font-size:54px}
 .contact-grid{gap:35px}
 .contact-links a{font-size:23px}
