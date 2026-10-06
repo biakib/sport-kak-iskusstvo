@@ -727,3 +727,7 @@ h1,h2,h3{text-wrap:balance}
 .formats .format-card a b{display:inline-block;transition:transform .25s ease}
 .formats .format-card:hover a b{transform:translateX(5px)}
 .formats .format-card a:focus-visible,.format-card:focus-within{outline:2px solid var(--lime);outline-offset:3px}
+
+/* Match Ivan's portrait scale to the other mentor headshots. */
+.mentor-photo img[src*="ivan-egorov-2026"]{transform:scale(1.35) translateX(9%);transform-origin:40% 65%}
+.mentor:hover .mentor-photo img[src*="ivan-egorov-2026"]{transform:scale(1.404) translateX(9%)}
