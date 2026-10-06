@@ -728,3 +728,7 @@ h1,h2,h3{text-wrap:balance}
 .formats .format-card:hover a b{transform:translateX(5px)}
 .formats .format-card a:focus-visible,.format-card:focus-within{outline:2px solid var(--lime);outline-offset:3px}
 
+
+/* Hide the black padding embedded in Nikolay's source photograph. */
+.mentor-photo img[src*="nikolay-new"]{transform:scale(1.12);transform-origin:center top}
+.mentor:hover .mentor-photo img[src*="nikolay-new"]{transform:scale(1.1648)}
