@@ -149,13 +149,18 @@
 }
 @media(max-width:360px){.training-location h2{font-size:27px}.training-location-details{padding-left:0}}
 </style><style>
-@media(min-width:1001px){.training-location-inner{grid-template-columns:1.15fr 1.1fr .7fr;gap:38px}.training-location h2{font-size:clamp(30px,3.1vw,44px)}.training-location-metro{font-size:15px}.training-location address{font-size:16px}}
-.training-location-schedule{border-left:1px solid #b8d63a38;padding-left:26px}
-.training-location-schedule p{color:#b9c2b6;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.12em;line-height:1.5;margin:0 0 13px}
-.training-location-schedule strong{display:block;font-size:16px;line-height:1.5;font-weight:800;color:#efece2;margin:0 0 13px}
-.training-location-schedule>span{display:block;white-space:nowrap;font-size:24px;line-height:1.3;font-weight:800;letter-spacing:-.03em;color:#b8d63a}
+@media(min-width:1001px){.training-location-inner{grid-template-columns:1.05fr 1.05fr .9fr;gap:32px}.training-location h2{font-size:clamp(29px,2.9vw,40px)}.training-location-metro{font-size:15px}.training-location address{font-size:16px}}
+.training-location-schedule{border-left:1px solid #b8d63a38;padding-left:24px}
+.training-location-schedule .schedule-label{color:#b9c2b6;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.12em;line-height:1.5;margin:0 0 8px}
+.training-location-schedule .schedule-days{color:#efece2;font-size:13px;line-height:1.4;font-weight:800;margin:0 0 19px}
+.training-location-schedule h3{font-family:Manrope,Arial,sans-serif;color:#efece2;font-size:14px;font-weight:800;line-height:1.4;letter-spacing:0;margin:0}
+.schedule-adults{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:5px 14px;margin-bottom:15px}
+.schedule-adults time,.schedule-children dd{color:#b8d63a;white-space:nowrap;font-size:17px;font-weight:800;line-height:1.4;letter-spacing:-.02em}
+.schedule-children{border-top:1px solid #b8d63a25;padding-top:14px}
+.schedule-children dl{margin:8px 0 0}.schedule-children dl>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:7px}
+.schedule-children dt{color:#c9d0c5;font-size:13px;line-height:1.4;white-space:nowrap}.schedule-children dd{margin:0}
 @media(min-width:761px) and (max-width:1000px){.training-location-schedule{grid-column:2}}
-@media(max-width:760px){.training-location-schedule{margin-left:19px;padding:19px 0 0;border-left:0;border-top:1px solid #b8d63a38;display:grid;grid-template-columns:1fr 1fr;column-gap:12px;align-items:center}.training-location-schedule p{grid-column:1/-1;margin-bottom:9px}.training-location-schedule strong{font-size:14px;margin:0}.training-location-schedule>span{font-size:22px}}
+@media(max-width:760px){.training-location-schedule{margin-left:19px;padding:20px 0 0;border-left:0;border-top:1px solid #b8d63a38;display:block;max-width:310px}.training-location-schedule .schedule-days{margin-bottom:15px}.schedule-adults time,.schedule-children dd{font-size:17px}}
 @media(max-width:360px){.training-location-schedule{margin-left:0}}
 </style></head>
 <body class="__variable_geist_0tvmz3h __variable_geist_mono_1diim1n antialiased">
@@ -189,7 +194,7 @@
 <address>г. Москва, улица Народного Ополчения, 9А</address>
 <a class="button training-location-signup cm-open" href="https://t.me/sport_us_art">Записаться на тренировки <span class="arrow-icon" aria-hidden="true"></span></a>
 </div>
-<div class="training-location-schedule"><p>Расписание</p><strong>Понедельник<br>Среда</strong><span>20:00–21:30</span></div>
+<div class="training-location-schedule"><p class="schedule-label">Расписание</p><p class="schedule-days">Понедельник и среда</p><div class="schedule-adults"><h3>Взрослые</h3><time>20:00–21:30</time></div><div class="schedule-children"><h3>Дети</h3><dl><div><dt>1–4 классы</dt><dd>18:00–18:45</dd></div><div><dt>5–11 классы</dt><dd>19:00–20:00</dd></div></dl></div></div>
 </div></section>
 <section id="project" class="statement shell">
 <p class="eyebrow teal">Не просто спорт</p>
