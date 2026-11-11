@@ -121,7 +121,31 @@
 }
 </script>
 <style>.formats .adaptive-card{background:#d9b77b;color:#141a14}.formats .adaptive-card a{background:#141a14;color:#efece2}.formats .adaptive-card .card-tag{background:#141a1410;border-color:#141a1430}</style>
-</head>
+<style>
+.training-location{position:relative;isolation:isolate;overflow:hidden;background:#b8d63a;color:#101410;border-top:1px solid #d0eb70;border-bottom:1px solid #10141030}
+.training-location:before{content:"";position:absolute;z-index:-1;width:620px;height:620px;border:1px solid #1014101f;border-radius:50%;right:-300px;top:-270px;pointer-events:none}
+.training-location:after{content:"";position:absolute;z-index:-1;width:370px;height:370px;border:1px solid #b83d6366;border-radius:50%;right:-175px;bottom:-235px;pointer-events:none}
+.training-location-inner{position:relative;display:flow-root;padding-top:25px;padding-bottom:25px}
+.training-location-top{display:flex;justify-content:space-between;gap:16px;padding-bottom:22px;border-bottom:1px solid #10141035;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.training-location-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:center;padding:50px 0 42px}
+.training-location-label{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 22px;color:#414c17}
+.training-location h2{font-family:Unbounded,Manrope,Arial,sans-serif;font-size:clamp(32px,4.2vw,56px);font-weight:500;letter-spacing:-.055em;line-height:1.12;margin:0 0 22px;text-wrap:balance}
+.training-location h2 span{color:#101410}
+.training-location-description{font-size:16px;line-height:1.5;margin:0;color:#26300f}
+.training-location-details{padding-left:38px;border-left:1px solid #10141035}
+.training-location-metro{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:800;margin-bottom:20px}
+.training-metro-icon{display:grid;place-items:center;width:30px;height:30px;background:#b83d63;color:#fff;border-radius:50%;font-family:Arial,sans-serif;font-size:18px;font-weight:900;line-height:1}
+.training-location address{font-family:Manrope,Arial,sans-serif;font-style:normal;font-size:clamp(24px,2.6vw,35px);font-weight:800;line-height:1.22;letter-spacing:-.035em;margin:0 0 26px}
+.training-location-city{display:block;font-size:14px;font-weight:500;letter-spacing:0;margin-bottom:9px}
+.training-location-signup{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;border:1px solid #101410;background:#101410;color:#efece2;border-radius:999px;padding:17px 23px;font-size:15px;font-weight:800;line-height:1.3;text-decoration:none;transition:background .2s,transform .2s;box-shadow:0 9px 22px #1014101c}
+.training-location-signup svg{width:23px;height:23px;flex:none;fill:none;stroke:#b8d63a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.training-location-signup:hover{background:#263122;transform:translateY(-2px)}
+.training-location-signup:focus-visible{outline:3px solid #b83d63;outline-offset:5px}
+.training-location-bottom{display:flex;align-items:center;gap:9px;border-top:1px solid #10141035;padding-top:19px;font-size:12px;color:#26300f}
+.training-location-dot{width:6px;height:6px;border-radius:50%;background:#b83d63;flex:none}
+@media(max-width:760px){.training-location-inner{padding-top:21px;padding-bottom:21px}.training-location-top{font-size:8px;letter-spacing:.08em;padding-bottom:18px}.training-location-grid{grid-template-columns:1fr;gap:30px;padding:33px 0 28px}.training-location h2{font-size:clamp(29px,8vw,43px)}.training-location-label{margin-bottom:16px;font-size:10px}.training-location-description{font-size:14px}.training-location-details{border-left:0;border-top:1px solid #10141035;padding:26px 0 0}.training-location address{font-size:28px}.training-location-signup{width:100%;padding:16px 21px}.training-location-bottom{font-size:11px}.training-location-metro{font-size:14px}.training-location:before{right:-480px}}
+@media(prefers-reduced-motion:reduce){.training-location-signup{transition:none}.training-location-signup:hover{transform:none}}
+</style></head>
 <body class="__variable_geist_0tvmz3h __variable_geist_mono_1diim1n antialiased">
 <script src="/site-menu.js?v=14"></script>
 <main>
@@ -146,6 +170,18 @@
 <span>Айкидо · здоровье · сообщество</span>
 </div>
 </section>
+<section class="training-location" aria-labelledby="training-location-title">
+<div class="shell training-location-inner">
+<div class="training-location-top"><span>Спорт как искусство</span><span>Москва · Хорошкола</span></div>
+<div class="training-location-grid">
+<div class="training-location-copy"><p class="training-location-label">Место наших тренировок</p><h2 id="training-location-title">Тренируемся<br>в <span>Хорошколе</span></h2><p class="training-location-description">Приходите на занятия проекта<br>«Спорт как искусство»</p></div>
+<div class="training-location-details">
+<div class="training-location-metro"><span class="training-metro-icon" aria-hidden="true">М</span><span>Народное Ополчение</span></div>
+<address><span class="training-location-city">Город Москва</span>Улица Народного<br>Ополчения, 9А</address>
+<a class="training-location-signup cm-open" href="https://t.me/sport_us_art">Записаться на занятия <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></div>
+<div class="training-location-bottom"><span class="training-location-dot" aria-hidden="true"></span><span>Обсудим удобное время и подберём группу</span></div>
+</div></section>
 <section id="project" class="statement shell">
 <p class="eyebrow teal">Не просто спорт</p>
 <h2>Сила — это<br/>
