@@ -105,6 +105,7 @@ function openBiography(mentor) {
 }
 
 document.querySelectorAll(".mentor").forEach((button, index) => {
+  if (button.classList.contains("mentor-static")) return;
   button.type = "button";
   button.addEventListener("click", (e) => {
     if (e.target.closest("a")) return;
