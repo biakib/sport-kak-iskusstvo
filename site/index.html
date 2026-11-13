@@ -163,9 +163,6 @@
 @media(max-width:760px){.training-location-schedule{margin-left:19px;padding:20px 0 0;border-left:0;border-top:1px solid #b8d63a38;display:block;max-width:310px}.training-location-schedule .schedule-days{margin-bottom:15px}.schedule-adults time,.schedule-children dd{font-size:17px}}
 @media(max-width:360px){.training-location-schedule{margin-left:0}}
 </style><style>
-.mentor-static{cursor:default}
-.mentor-static:hover{border-color:#38403a;transform:none}
-.mentor-static:hover .mentor-photo img{transform:none}
 @media(min-width:1100px){.mentor-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media(min-width:761px) and (max-width:1099px){.mentor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style></head>
@@ -369,10 +366,10 @@
 </button>
 </article>
 <article class="mentor-cell">
-<div class="mentor mentor-static">
+<button class="mentor" type="button" aria-label="Открыть биографию: Пётр Решетников">
 <span class="mentor-photo"><img src="./images/petr-reshetnikov.jpg" alt="Пётр Решетников" width="1254" height="1254" loading="lazy"/></span>
-<div class="mentor-info"><h3>Пётр Решетников</h3><p>Руководитель научного направления проекта и раздела «Динамическая нейродетекция»</p></div>
-</div>
+<span class="mentor-info"><h3>Пётр Решетников</h3><p>Руководитель научного направления проекта и раздела «Динамическая нейродетекция»</p><b>Кратко о наставнике <span class="arrow-icon" aria-hidden="true"></span></b></span>
+</button>
 </article>
 </div>
 </section>
@@ -554,7 +551,7 @@
 </a>
 </footer>
 </main>
-<script defer src="./app.js?v=petr-1">
+<script defer src="./app.js?v=petr-bio-2">
 </script>
 </body>
 </html>
